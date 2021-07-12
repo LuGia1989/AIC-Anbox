@@ -1,0 +1,650 @@
+lxc 20210405154519.507 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type u nsid 0 hostid 100000 range 100000
+lxc 20210405154519.508 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type g nsid 0 hostid 100000 range 100000
+lxc 20210405154519.512 TRACE    start - start.c:lxc_init_handler:748 - Created anonymous pair {12,13} of unix sockets
+lxc 20210405154519.512 TRACE    commands - commands.c:lxc_cmd_init:1248 - Creating abstract unix socket "/var/lib/anbox/containers/default/command"
+lxc 20210405154519.513 TRACE    start - start.c:lxc_init_handler:760 - Unix domain socket 14 for command server is ready
+lxc 20210405154519.513 INFO     lxccontainer - lxccontainer.c:do_lxcapi_start:961 - Set process title to [lxc monitor] /var/lib/anbox/containers default
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 3
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 4
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 5
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 6
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 7
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 8
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 9
+lxc 20210405154519.514 INFO     start - start.c:lxc_check_inherited:314 - Closed inherited fd 10
+lxc 20210405154519.514 TRACE    start - start.c:lxc_start:2052 - Doing lxc_start
+lxc 20210405154519.514 INFO     lsm - lsm/lsm.c:lsm_init:50 - LSM security driver AppArmor
+lxc 20210405154519.514 TRACE    start - start.c:lxc_init:777 - Initialized LSM
+lxc 20210405154519.514 TRACE    start - start.c:lxc_init:784 - Read seccomp policy
+lxc 20210405154519.515 TRACE    start - start.c:lxc_serve_state_clients:466 - Set container state to STARTING
+lxc 20210405154519.515 TRACE    start - start.c:lxc_serve_state_clients:469 - No state clients registered
+lxc 20210405154519.515 TRACE    start - start.c:lxc_init:792 - Set container state to "STARTING"
+lxc 20210405154519.515 TRACE    start - start.c:lxc_init:855 - Set environment variables
+lxc 20210405154519.515 TRACE    start - start.c:lxc_init:862 - Ran pre-start hooks
+lxc 20210405154519.515 TRACE    start - start.c:setup_signal_fd:359 - Created signal file descriptor 3
+lxc 20210405154519.515 TRACE    start - start.c:lxc_init:873 - Set up signal fd
+lxc 20210405154519.516 DEBUG    terminal - terminal.c:lxc_terminal_peer_default:707 - No such device - The process does not have a controlling terminal
+lxc 20210405154519.516 DEBUG    terminal - terminal.c:lxc_terminal_create_log_file:879 - Using "/var/lib/anbox/logs/console.log" as terminal log file
+lxc 20210405154519.516 TRACE    start - start.c:lxc_init:881 - Created console
+lxc 20210405154519.516 TRACE    terminal - terminal.c:lxc_terminal_map_ids:1225 - Chowned terminal "/dev/pts/0"
+lxc 20210405154519.516 TRACE    start - start.c:lxc_init:888 - Chowned console
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1031 - basecginfo is:
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1032 - 12:devices:/
+11:hugetlb:/
+10:perf_event:/
+9:memory:/
+8:rdma:/
+7:freezer:/
+6:pids:/
+5:blkio:/
+4:cpu,cpuacct:/
+3:cpuset:/
+2:net_cls,net_prio:/
+1:name=systemd:/init.scope
+0::/init.scope
+
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 0: devices
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 1: hugetlb
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 2: perf_event
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 3: memory
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 4: rdma
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 5: freezer
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 6: pids
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 7: blkio
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 8: cpu
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 9: cpuacct
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 10: cpuset
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 11: net_cls
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 12: net_prio
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 13: cgroup2
+lxc 20210405154519.516 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1038 - named subsystem 0: name=systemd
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2431 - No controllers are enabled for delegation in the unified hierarchy
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2459 - Writable cgroup hierarchies:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1012 -   Hierarchies:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   0: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/unified
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   1: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/systemd
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: name=systemd
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   2: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpu,cpuacct
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpu
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: cpuacct
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   3: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/net_cls,net_prio
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: net_cls
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: net_prio
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   4: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpuset
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpuset
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   5: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/blkio
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: blkio
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   6: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/freezer
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: freezer
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   7: base_cgroup: /
+lxc 20210405154519.517 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/memory
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: memory
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   8: base_cgroup: /
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/pids
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: pids
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   9: base_cgroup: /
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/hugetlb
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: hugetlb
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   10: base_cgroup: /
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/devices
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: devices
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   11: base_cgroup: /
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/rdma
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: rdma
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   12: base_cgroup: /
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/perf_event
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc 20210405154519.518 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: perf_event
+lxc 20210405154519.518 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:56 - Initialized cgroup driver cgfsng
+lxc 20210405154519.518 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:61 - Running with hybrid cgroup layout
+lxc 20210405154519.518 TRACE    start - start.c:lxc_init:895 - Initialized cgroup driver
+lxc 20210405154519.518 INFO     start - start.c:lxc_init:897 - Container "default" is initialized
+lxc 20210405154519.518 DEBUG    storage - storage/storage.c:storage_query:253 - Detected rootfs type "dir"
+lxc 20210405154519.519 INFO     network - network.c:instantiate_veth:147 - Retrieved mtu 1500 from anbox0
+lxc 20210405154519.520 INFO     network - network.c:instantiate_veth:175 - Attached "veth7B0OGX" to bridge "anbox0"
+lxc 20210405154519.520 DEBUG    network - network.c:instantiate_veth:201 - Instantiated veth "veth7B0OGX/vethDOIHVX", index is "3"
+lxc 20210405154519.541 TRACE    cgfsng - cgroups/cgfsng.c:cg_legacy_filter_and_set_cpus:434 - No isolated cpus detected
+lxc 20210405154519.542 DEBUG    cgfsng - cgroups/cgfsng.c:cg_legacy_handle_cpuset_hierarchy:620 - "cgroup.clone_children" was already set to "1"
+lxc 20210405154519.543 TRACE    start - start.c:lxc_spawn:1684 - Cloned child process 1693
+lxc 20210405154519.543 INFO     start - start.c:lxc_spawn:1688 - Cloned CLONE_NEWUSER
+lxc 20210405154519.543 INFO     start - start.c:lxc_spawn:1688 - Cloned CLONE_NEWNS
+lxc 20210405154519.543 INFO     start - start.c:lxc_spawn:1688 - Cloned CLONE_NEWPID
+lxc 20210405154519.543 INFO     start - start.c:lxc_spawn:1688 - Cloned CLONE_NEWUTS
+lxc 20210405154519.543 INFO     start - start.c:lxc_spawn:1688 - Cloned CLONE_NEWIPC
+lxc 20210405154519.543 TRACE    caps - caps.c:lxc_ambient_caps_up:192 - Raised = cap_chown,cap_dac_override,cap_dac_read_search,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_linux_immutable,cap_net_bind_service,cap_net_broadcast,cap_net_admin,cap_net_raw,cap_ipc_lock,cap_ipc_owner,cap_sys_module,cap_sys_rawio,cap_sys_chroot,cap_sys_ptrace,cap_sys_pacct,cap_sys_admin,cap_sys_boot,cap_sys_nice,cap_sys_resource,cap_sys_time,cap_sys_tty_config,cap_mknod,cap_lease,cap_audit_write,cap_audit_control,cap_setfcap,cap_mac_override,cap_mac_admin,cap_syslog,cap_wake_alarm,cap_block_suspend,cap_audit_read+eip in inheritable and ambient capability set
+lxc 20210405154519.543 DEBUG    start - start.c:lxc_try_preserve_namespaces:196 - Preserved user namespace via fd 15
+lxc 20210405154519.543 DEBUG    start - start.c:lxc_try_preserve_namespaces:196 - Preserved mnt namespace via fd 16
+lxc 20210405154519.543 DEBUG    start - start.c:lxc_try_preserve_namespaces:196 - Preserved pid namespace via fd 17
+lxc 20210405154519.543 DEBUG    start - start.c:lxc_try_preserve_namespaces:196 - Preserved uts namespace via fd 18
+lxc 20210405154519.544 DEBUG    start - start.c:lxc_try_preserve_namespaces:196 - Preserved ipc namespace via fd 19
+lxc 20210405154519.544 WARN     conf - conf.c:lxc_map_ids:2917 - newuidmap binary is missing
+lxc 20210405154519.544 WARN     conf - conf.c:lxc_map_ids:2923 - newgidmap binary is missing
+lxc 20210405154519.544 DEBUG    conf - conf.c:lxc_map_ids:2937 - No newuidmap and newgidmap binary found. Trying to write directly with euid 0
+lxc 20210405154519.544 TRACE    conf - conf.c:lxc_map_ids:3009 - Wrote mapping "0 100000 100000
+"
+lxc 20210405154519.544 TRACE    conf - conf.c:lxc_map_ids:3009 - Wrote mapping "0 100000 100000
+"
+lxc 20210405154519.546 INFO     start - start.c:do_start:1136 - Unshared CLONE_NEWNET
+lxc 20210405154519.546 TRACE    conf - conf.c:get_minimal_idmap:4265 - Allocated minimal idmapping
+lxc 20210405154519.547 TRACE    conf - conf.c:userns_exec_1:4345 - Establishing uid mapping for "1694" in new user namespace: nsuid 0 - hostid 100000 - range 100000
+lxc 20210405154519.547 TRACE    conf - conf.c:userns_exec_1:4345 - Establishing uid mapping for "1694" in new user namespace: nsuid 100000 - hostid 0 - range 1
+lxc 20210405154519.547 TRACE    conf - conf.c:userns_exec_1:4345 - Establishing gid mapping for "1694" in new user namespace: nsuid 0 - hostid 100000 - range 100000
+lxc 20210405154519.547 TRACE    conf - conf.c:userns_exec_1:4345 - Establishing gid mapping for "1694" in new user namespace: nsuid 100000 - hostid 0 - range 1
+lxc 20210405154519.547 WARN     conf - conf.c:lxc_map_ids:2917 - newuidmap binary is missing
+lxc 20210405154519.547 WARN     conf - conf.c:lxc_map_ids:2923 - newgidmap binary is missing
+lxc 20210405154519.547 DEBUG    conf - conf.c:lxc_map_ids:2937 - No newuidmap and newgidmap binary found. Trying to write directly with euid 0
+lxc 20210405154519.547 TRACE    conf - conf.c:lxc_map_ids:3009 - Wrote mapping "0 100000 100000
+100000 0 1
+"
+lxc 20210405154519.547 TRACE    conf - conf.c:lxc_map_ids:3009 - Wrote mapping "0 100000 100000
+100000 0 1
+"
+lxc 20210405154519.547 TRACE    conf - conf.c:run_userns_fn:4091 - Calling function "chown_cgroup_wrapper"
+lxc 20210405154519.548 DEBUG    start - start.c:lxc_spawn:1742 - Preserved net namespace via fd 7
+lxc 20210405154519.548 TRACE    start - start.c:lxc_spawn:1748 - Allocated new network namespace id
+lxc 20210405154519.570 DEBUG    network - network.c:lxc_network_move_created_netdev_priv:2500 - Moved network device "vethDOIHVX"/"(null)" to network namespace of 1693
+lxc 20210405154519.570 NOTICE   utils - utils.c:lxc_switch_uid_gid:1378 - Switched to gid 0
+lxc 20210405154519.570 NOTICE   utils - utils.c:lxc_switch_uid_gid:1387 - Switched to uid 0
+lxc 20210405154519.570 NOTICE   utils - utils.c:lxc_setgroups:1400 - Dropped additional groups
+lxc 20210405154519.570 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nproc" limit
+lxc 20210405154519.570 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nofile" limit
+lxc 20210405154519.570 INFO     start - start.c:do_start:1242 - Unshared CLONE_NEWCGROUP
+lxc 20210405154519.571 TRACE    conf - conf.c:remount_all_slave:3349 - Remounted all mount table entries as MS_SLAVE
+lxc 20210405154519.571 DEBUG    storage - storage/storage.c:storage_query:253 - Detected rootfs type "dir"
+lxc 20210405154519.571 DEBUG    dir - storage/dir.c:dir_mount:192 - Remounting "/var/lib/anbox/rootfs" on "/usr/lib/aarch64-linux-gnu/lxc" readonly
+lxc 20210405154519.571 TRACE    dir - storage/dir.c:dir_mount:203 - Mounted "/var/lib/anbox/rootfs" on "/usr/lib/aarch64-linux-gnu/lxc"
+lxc 20210405154519.571 DEBUG    conf - conf.c:lxc_mount_rootfs:1332 - Mounted rootfs "/var/lib/anbox/rootfs" onto "/usr/lib/aarch64-linux-gnu/lxc" with options "ro"
+lxc 20210405154519.571 INFO     conf - conf.c:setup_utsname:791 - Set hostname to "anbox"
+lxc 20210405154519.594 DEBUG    network - network.c:lxc_setup_netdev_in_child_namespaces:3032 - Network device "eth0" has been setup
+lxc 20210405154519.594 INFO     network - network.c:lxc_setup_network_in_child_namespaces:3053 - network has been setup
+lxc 20210405154519.594 TRACE    network - network.c:lxc_network_send_name_and_ifindex_to_parent:3134 - Sent network device names and ifindices to parent
+lxc 20210405154519.594 INFO     conf - conf.c:mount_autodev:1118 - Preparing "/dev"
+lxc 20210405154519.594 TRACE    conf - conf.c:mount_autodev:1142 - Mounted tmpfs on "/usr/lib/aarch64-linux-gnu/lxc/dev"
+lxc 20210405154519.594 INFO     conf - conf.c:mount_autodev:1165 - Prepared "/dev"
+lxc 20210405154519.595 INFO     conf - conf.c:lxc_fill_autodev:1209 - Populating "/dev"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/full" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/full"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/null" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/null"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/random" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/random"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/tty" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/tty"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/urandom" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/urandom"
+lxc 20210405154519.595 DEBUG    conf - conf.c:lxc_fill_autodev:1282 - Bind mounted host device node "/dev/zero" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/zero"
+lxc 20210405154519.595 INFO     conf - conf.c:lxc_fill_autodev:1286 - Populated "/dev"
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/sockets/qemu_pipe" on "/usr/lib/aarch64-linux-gnu/lxc//dev/qemu_pipe" to respect bind or remount options
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/sockets/qemu_pipe" were 6, required extra flags are 6
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/sockets/qemu_pipe" on "/usr/lib/aarch64-linux-gnu/lxc//dev/qemu_pipe" with filesystem type "none"
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/sockets/anbox_bridge" on "/usr/lib/aarch64-linux-gnu/lxc//dev/anbox_bridge" to respect bind or remount options
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/sockets/anbox_bridge" were 6, required extra flags are 6
+lxc 20210405154519.595 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/sockets/anbox_bridge" on "/usr/lib/aarch64-linux-gnu/lxc//dev/anbox_bridge" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/sockets/anbox_audio" on "/usr/lib/aarch64-linux-gnu/lxc//dev/anbox_audio" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/sockets/anbox_audio" were 6, required extra flags are 6
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/sockets/anbox_audio" on "/usr/lib/aarch64-linux-gnu/lxc//dev/anbox_audio" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/input/event3" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event3" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/input/event3" were 6, required extra flags are 6
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/input/event3" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event3" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/input/event2" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event2" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/input/event2" were 6, required extra flags are 6
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/input/event2" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event2" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/input/event1" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event1" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/input/event1" were 6, required extra flags are 6
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/input/event1" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event1" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/run/user/1000/anbox/input/event0" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event0" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/run/user/1000/anbox/input/event0" were 6, required extra flags are 6
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/run/user/1000/anbox/input/event0" on "/usr/lib/aarch64-linux-gnu/lxc//dev/input/event0" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/console" on "/usr/lib/aarch64-linux-gnu/lxc//dev/console" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/console" were 4096, required extra flags are 0
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/console" on "/usr/lib/aarch64-linux-gnu/lxc//dev/console" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/full" on "/usr/lib/aarch64-linux-gnu/lxc//dev/full" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/full" were 4106, required extra flags are 10
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/full" on "/usr/lib/aarch64-linux-gnu/lxc//dev/full" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/null" on "/usr/lib/aarch64-linux-gnu/lxc//dev/null" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/null" were 4106, required extra flags are 10
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/null" on "/usr/lib/aarch64-linux-gnu/lxc//dev/null" with filesystem type "none"
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/random" on "/usr/lib/aarch64-linux-gnu/lxc//dev/random" to respect bind or remount options
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/random" were 4106, required extra flags are 10
+lxc 20210405154519.596 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/random" on "/usr/lib/aarch64-linux-gnu/lxc//dev/random" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/urandom" on "/usr/lib/aarch64-linux-gnu/lxc//dev/urandom" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/urandom" were 4106, required extra flags are 10
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/urandom" on "/usr/lib/aarch64-linux-gnu/lxc//dev/urandom" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/zero" on "/usr/lib/aarch64-linux-gnu/lxc//dev/zero" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/zero" were 4106, required extra flags are 10
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/zero" on "/usr/lib/aarch64-linux-gnu/lxc//dev/zero" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/ashmem" on "/usr/lib/aarch64-linux-gnu/lxc//dev/ashmem" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/ashmem" were 4096, required extra flags are 0
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/ashmem" on "/usr/lib/aarch64-linux-gnu/lxc//dev/ashmem" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/fuse" on "/usr/lib/aarch64-linux-gnu/lxc//dev/fuse" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/fuse" were 4106, required extra flags are 10
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/fuse" on "/usr/lib/aarch64-linux-gnu/lxc//dev/fuse" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/binderfs/binder0" on "/usr/lib/aarch64-linux-gnu/lxc//dev/binder" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/binderfs/binder0" were 4096, required extra flags are 0
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/binderfs/binder0" on "/usr/lib/aarch64-linux-gnu/lxc//dev/binder" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/binderfs/binder1" on "/usr/lib/aarch64-linux-gnu/lxc//dev/vndbinder" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/binderfs/binder1" were 4096, required extra flags are 0
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/binderfs/binder1" on "/usr/lib/aarch64-linux-gnu/lxc//dev/vndbinder" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/dev/binderfs/binder2" on "/usr/lib/aarch64-linux-gnu/lxc//dev/hwbinder" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/dev/binderfs/binder2" were 4096, required extra flags are 0
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/dev/binderfs/binder2" on "/usr/lib/aarch64-linux-gnu/lxc//dev/hwbinder" with filesystem type "none"
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/power_supply" on "/usr/lib/aarch64-linux-gnu/lxc///sys/class/power_supply" to respect bind or remount options
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/power_supply" were 4096, required extra flags are 1
+lxc 20210405154519.597 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/power_supply" on "/usr/lib/aarch64-linux-gnu/lxc///sys/class/power_supply" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/online" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/system_cpu_available" were 4096, required extra flags are 1
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/online" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/present" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/system_cpu_available" were 4096, required extra flags are 1
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/present" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/possible" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/system_cpu_available" were 4096, required extra flags are 1
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/system_cpu_available" on "/usr/lib/aarch64-linux-gnu/lxc///sys/devices/system/cpu/possible" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_cmdline" on "/usr/lib/aarch64-linux-gnu/lxc//proc/cmdline" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_cmdline" were 4096, required extra flags are 1
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_cmdline" on "/usr/lib/aarch64-linux-gnu/lxc//proc/cmdline" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_bits" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_rnd_bits" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_bits" were 4096, required extra flags are 0
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_bits" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_rnd_bits" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_compat_bits" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_rnd_compat_bits" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_compat_bits" were 4096, required extra flags are 0
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_vm_mmap_rnd_compat_bits" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_rnd_compat_bits" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_kptr_restrict" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/kptr_restrict" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_kptr_restrict" were 4096, required extra flags are 0
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_kptr_restrict" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/kptr_restrict" with filesystem type "none"
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_schedstats" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_schedstats" to respect bind or remount options
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_schedstats" were 4096, required extra flags are 0
+lxc 20210405154519.598 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_schedstats" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_schedstats" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_hung_task_timeout_secs" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/hung_task_timeout_secs" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_hung_task_timeout_secs" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_hung_task_timeout_secs" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/hung_task_timeout_secs" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_tunable_scaling" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_tunable_scaling" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_tunable_scaling" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_tunable_scaling" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_tunable_scaling" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_latency_ns" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_latency_ns" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_latency_ns" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_latency_ns" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_latency_ns" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_panic_on_oops" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/panic_on_oops" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_panic_on_oops" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_panic_on_oops" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/panic_on_oops" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_wakeup_granularity_ns" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_wakeup_granularity_ns" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_wakeup_granularity_ns" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_wakeup_granularity_ns" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_wakeup_granularity_ns" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_child_runs_first" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_child_runs_first" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_child_runs_first" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_child_runs_first" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_child_runs_first" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_randomize_va_space" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/randomize_va_space" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_randomize_va_space" were 4096, required extra flags are 0
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_randomize_va_space" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/randomize_va_space" with filesystem type "none"
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_vm_mmap_min_addr" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_min_addr" to respect bind or remount options
+lxc 20210405154519.599 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_vm_mmap_min_addr" were 4096, required extra flags are 0
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_vm_mmap_min_addr" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/vm/mmap_min_addr" with filesystem type "none"
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_rt_runtime_us" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_rt_runtime_us" to respect bind or remount options
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_rt_runtime_us" were 4096, required extra flags are 0
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_rt_runtime_us" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_rt_runtime_us" with filesystem type "none"
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sched_rt_period_us" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_rt_period_us" to respect bind or remount options
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sched_rt_period_us" were 4096, required extra flags are 0
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sched_rt_period_us" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sched_rt_period_us" with filesystem type "none"
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2027 - Remounting "/var/lib/anbox/state/proc_sys_kernel_sysrq" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sysrq" to respect bind or remount options
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2048 - Flags for "/var/lib/anbox/state/proc_sys_kernel_sysrq" were 4096, required extra flags are 0
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2058 - Mountflags already were 4096, skipping remount
+lxc 20210405154519.600 DEBUG    conf - conf.c:mount_entry:2102 - Mounted "/var/lib/anbox/state/proc_sys_kernel_sysrq" on "/usr/lib/aarch64-linux-gnu/lxc//proc/sys/kernel/sysrq" with filesystem type "none"
+lxc 20210405154519.600 INFO     conf - conf.c:mount_file_entries:2333 - Finished setting up mounts
+lxc 20210405154519.600 DEBUG    conf - conf.c:lxc_setup_dev_console:1745 - Cleared all (1) mounts from "/usr/lib/aarch64-linux-gnu/lxc/dev/console"
+lxc 20210405154519.600 DEBUG    conf - conf.c:lxc_setup_dev_console:1771 - Mounted pts device "/dev/pts/0" onto "/usr/lib/aarch64-linux-gnu/lxc/dev/console"
+lxc 20210405154519.600 INFO     utils - utils.c:lxc_mount_proc_if_needed:1231 - I am 1, /proc/self points to "1"
+lxc 20210405154519.601 TRACE    conf - conf.c:lxc_pivot_root:1540 - pivot_root("/usr/lib/aarch64-linux-gnu/lxc") successful
+lxc 20210405154519.601 WARN     conf - conf.c:lxc_setup_devpts:1616 - Invalid argument - Failed to unmount old devpts instance
+lxc 20210405154519.602 DEBUG    conf - conf.c:lxc_setup_devpts:1653 - Mount new devpts instance with options "gid=5,newinstance,ptmxmode=0666,mode=0620,max=1024"
+lxc 20210405154519.602 DEBUG    conf - conf.c:lxc_setup_devpts:1672 - Created dummy "/dev/ptmx" file as bind mount target
+lxc 20210405154519.602 DEBUG    conf - conf.c:lxc_setup_devpts:1677 - Bind mounted "/dev/pts/ptmx" to "/dev/ptmx"
+lxc 20210405154519.602 INFO     conf - conf.c:lxc_setup_ttys:949 - Finished setting up 0 /dev/tty<N> device(s)
+lxc 20210405154519.602 DEBUG    conf - conf.c:setup_caps:2503 - Dropped sys_boot (22) capability
+lxc 20210405154519.602 DEBUG    conf - conf.c:setup_caps:2506 - Capabilities have been setup
+lxc 20210405154519.602 NOTICE   conf - conf.c:lxc_setup:3692 - The container "default" is set up
+lxc 20210405154519.602 INFO     lsm - lsm/lsm.c:lsm_process_label_set_at:178 - Set AppArmor label to "anbox_container"
+lxc 20210405154519.602 INFO     apparmor - lsm/apparmor.c:apparmor_process_label_set:249 - Changed apparmor profile to anbox_container
+lxc 20210405154519.602 TRACE    start - start.c:lxc_spawn:1805 - Set up legacy device cgroup controller limits
+lxc 20210405154519.602 DEBUG    start - start.c:lxc_spawn:1817 - Preserved cgroup namespace via fd 20
+lxc 20210405154519.602 NOTICE   start - start.c:start:2025 - Exec'ing "/anbox-init"
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:271 - index: 0
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:272 - ifindex: 3
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:276 - type: veth
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:284 - veth1 : veth7B0OGX
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:288 - host side ifindex for veth device: 4
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:326 - flags: up
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:329 - link: anbox0
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:332 - name: eth0
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:347 - ipv4 gateway auto: false
+lxc 20210405154519.604 TRACE    confile_utils - confile_utils.c:lxc_log_configured_netdevs:363 - ipv6 gateway auto: false
+lxc 20210405154519.604 NOTICE   start - start.c:post_start:2036 - Started "/anbox-init" with pid "1693"
+lxc 20210405154519.604 TRACE    start - start.c:lxc_serve_state_socket_pair:536 - Sent container state "RUNNING" to 13
+lxc 20210405154519.604 TRACE    start - start.c:lxc_serve_state_clients:466 - Set container state to RUNNING
+lxc 20210405154519.604 DEBUG    lxccontainer - lxccontainer.c:wait_on_daemonized_start:830 - First child 1691 exited
+lxc 20210405154519.604 TRACE    start - start.c:lxc_serve_state_clients:469 - No state clients registered
+lxc 20210405154519.604 TRACE    lxccontainer - lxccontainer.c:wait_on_daemonized_start:846 - Container is in "RUNNING" state
+lxc 20210405154519.604 TRACE    start - start.c:lxc_poll:622 - Mainloop is ready
+lxc 20210405154519.604 NOTICE   start - start.c:signal_handler:430 - Received 17 from pid 1694 instead of container init 1693
+lxc-attach default 20210405154532.752 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_init_pid" received response
+lxc-attach default 20210405154532.752 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_init_pid" is 0
+lxc-attach default 20210405154532.753 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_init_pid" received response
+lxc-attach default 20210405154532.754 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_init_pid" is 0
+lxc-attach default 20210405154532.756 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154532.756 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154532.758 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type u nsid 0 hostid 100000 range 100000
+lxc-attach default 20210405154532.758 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type g nsid 0 hostid 100000 range 100000
+lxc-attach default 20210405154532.760 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154532.760 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154532.760 INFO     attach - attach.c:fetch_seccomp:659 - Failed to retrieve lxc.seccomp.profile
+lxc-attach default 20210405154532.761 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154532.761 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154532.761 INFO     attach - attach.c:fetch_seccomp:663 - Failed to retrieve lxc.seccomp
+lxc-attach default 20210405154532.762 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154532.763 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_clone_flags" received response
+lxc-attach default 20210405154532.763 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_clone_flags" is 0
+lxc-attach default 20210405154532.766 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1031 - basecginfo is:
+lxc-attach default 20210405154532.767 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1032 - 12:devices:/
+11:hugetlb:/
+10:perf_event:/
+9:memory:/
+8:rdma:/
+7:freezer:/
+6:pids:/
+5:blkio:/
+4:cpu,cpuacct:/
+3:cpuset:/
+2:net_cls,net_prio:/
+1:name=systemd:/init.scope
+0::/init.scope
+
+lxc-attach default 20210405154532.767 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 0: devices
+lxc-attach default 20210405154532.767 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 1: hugetlb
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 2: perf_event
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 3: memory
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 4: rdma
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 5: freezer
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 6: pids
+lxc-attach default 20210405154532.768 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 7: blkio
+lxc-attach default 20210405154532.769 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 8: cpu
+lxc-attach default 20210405154532.769 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 9: cpuacct
+lxc-attach default 20210405154532.769 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 10: cpuset
+lxc-attach default 20210405154532.769 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 11: net_cls
+lxc-attach default 20210405154532.769 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 12: net_prio
+lxc-attach default 20210405154532.770 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 13: cgroup2
+lxc-attach default 20210405154532.770 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1038 - named subsystem 0: name=systemd
+lxc-attach default 20210405154532.773 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2431 - No controllers are enabled for delegation in the unified hierarchy
+lxc-attach default 20210405154532.774 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2459 - Writable cgroup hierarchies:
+lxc-attach default 20210405154532.774 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1012 -   Hierarchies:
+lxc-attach default 20210405154532.775 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   0: base_cgroup: /
+lxc-attach default 20210405154532.775 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/unified
+lxc-attach default 20210405154532.775 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.775 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   1: base_cgroup: /
+lxc-attach default 20210405154532.775 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/systemd
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: name=systemd
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   2: base_cgroup: /
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpu,cpuacct
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpu
+lxc-attach default 20210405154532.776 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: cpuacct
+lxc-attach default 20210405154532.777 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   3: base_cgroup: /
+lxc-attach default 20210405154532.777 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/net_cls,net_prio
+lxc-attach default 20210405154532.777 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.777 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: net_cls
+lxc-attach default 20210405154532.777 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: net_prio
+lxc-attach default 20210405154532.778 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   4: base_cgroup: /
+lxc-attach default 20210405154532.778 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpuset
+lxc-attach default 20210405154532.778 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.778 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpuset
+lxc-attach default 20210405154532.779 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   5: base_cgroup: /
+lxc-attach default 20210405154532.779 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/blkio
+lxc-attach default 20210405154532.780 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.780 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: blkio
+lxc-attach default 20210405154532.780 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   6: base_cgroup: /
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/freezer
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: freezer
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   7: base_cgroup: /
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/memory
+lxc-attach default 20210405154532.781 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: memory
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   8: base_cgroup: /
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/pids
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: pids
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   9: base_cgroup: /
+lxc-attach default 20210405154532.782 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/hugetlb
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: hugetlb
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   10: base_cgroup: /
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/devices
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.783 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: devices
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   11: base_cgroup: /
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/rdma
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: rdma
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   12: base_cgroup: /
+lxc-attach default 20210405154532.784 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/perf_event
+lxc-attach default 20210405154532.785 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154532.785 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: perf_event
+lxc-attach default 20210405154532.785 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:56 - Initialized cgroup driver cgfsng
+lxc-attach default 20210405154532.785 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:61 - Running with hybrid cgroup layout
+lxc-attach default 20210405154532.786 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.787 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.788 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.788 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.789 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.101 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154532.102 TRACE    attach - attach.c:lxc_attach:1294 - Moved intermediate process 3452 into container's cgroups
+lxc-attach default 20210405154532.102 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nproc" limit
+lxc-attach default 20210405154532.102 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nofile" limit
+lxc-attach default 20210405154532.102 TRACE    attach - attach.c:lxc_attach:1325 - Told intermediate process to start initializing
+lxc-attach default 20210405154532.102 TRACE    attach - attach.c:lxc_attach:1442 - Intermediate process starting to initialize
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to user namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to mnt namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to pid namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to uts namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to ipc namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to net namespace of 1693
+lxc-attach default 20210405154532.102 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to cgroup namespace of 1693
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach:1332 - Received pid 3453 of attached process in parent pid namespace
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach:1520 - Sending pid 3453 of attached process
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:attach_child_main:792 - Set new personality
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach_drop_privs:310 - Dropped capability 22
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:attach_child_main:801 - Dropped capabilities
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach:1345 - Intermediate process 3452 exited
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:attach_child_main:814 - Set up environment
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach:1363 - Opened LSM label file descriptor 3
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:lxc_attach:1376 - Sent LSM label file descriptor 3 to child
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:attach_child_main:836 - Received LSM label file descriptor 3 from parent
+lxc-attach default 20210405154532.103 NOTICE   utils - utils.c:lxc_switch_uid_gid:1378 - Switched to gid 0
+lxc-attach default 20210405154532.103 NOTICE   utils - utils.c:lxc_switch_uid_gid:1387 - Switched to uid 0
+lxc-attach default 20210405154532.103 NOTICE   utils - utils.c:lxc_setgroups:1400 - Dropped additional groups
+lxc-attach default 20210405154532.103 INFO     lsm - lsm/lsm.c:lsm_process_label_set_at:178 - Set AppArmor label to "anbox_container"
+lxc-attach default 20210405154532.103 TRACE    attach - attach.c:attach_child_main:901 - Set AppArmor LSM label to "anbox_container"
+lxc-attach default 20210405154533.306 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_init_pid" received response
+lxc-attach default 20210405154533.312 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_init_pid" is 0
+lxc-attach default 20210405154533.324 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_init_pid" received response
+lxc-attach default 20210405154533.327 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_init_pid" is 0
+lxc-attach default 20210405154533.339 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154533.344 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154533.362 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type u nsid 0 hostid 100000 range 100000
+lxc-attach default 20210405154533.365 INFO     confile - confile.c:set_config_idmaps:1555 - Read uid map: type g nsid 0 hostid 100000 range 100000
+lxc-attach default 20210405154533.378 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154533.383 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154533.386 INFO     attach - attach.c:fetch_seccomp:659 - Failed to retrieve lxc.seccomp.profile
+lxc-attach default 20210405154533.390 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154533.392 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_config_item" is 0
+lxc-attach default 20210405154533.396 INFO     attach - attach.c:fetch_seccomp:663 - Failed to retrieve lxc.seccomp
+lxc-attach default 20210405154533.402 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_config_item" received response
+lxc-attach default 20210405154533.408 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_clone_flags" received response
+lxc-attach default 20210405154533.412 DEBUG    commands - commands.c:lxc_cmd_rsp_recv:165 - Response data length for command "get_clone_flags" is 0
+lxc-attach default 20210405154533.449 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1031 - basecginfo is:
+lxc-attach default 20210405154533.454 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1032 - 12:devices:/
+11:hugetlb:/
+10:perf_event:/
+9:memory:/
+8:rdma:/
+7:freezer:/
+6:pids:/
+5:blkio:/
+4:cpu,cpuacct:/
+3:cpuset:/
+2:net_cls,net_prio:/
+1:name=systemd:/init.scope
+0::/init.scope
+
+lxc-attach default 20210405154533.458 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 0: devices
+lxc-attach default 20210405154533.460 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 1: hugetlb
+lxc-attach default 20210405154533.462 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 2: perf_event
+lxc-attach default 20210405154533.463 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 3: memory
+lxc-attach default 20210405154533.467 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 4: rdma
+lxc-attach default 20210405154533.468 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 5: freezer
+lxc-attach default 20210405154533.470 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 6: pids
+lxc-attach default 20210405154533.473 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 7: blkio
+lxc-attach default 20210405154533.474 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 8: cpu
+lxc-attach default 20210405154533.476 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 9: cpuacct
+lxc-attach default 20210405154533.477 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 10: cpuset
+lxc-attach default 20210405154533.481 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 11: net_cls
+lxc-attach default 20210405154533.483 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 12: net_prio
+lxc-attach default 20210405154533.485 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1035 - kernel subsystem 13: cgroup2
+lxc-attach default 20210405154533.488 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_basecg_debuginfo:1038 - named subsystem 0: name=systemd
+lxc-attach default 20210405154533.518 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2431 - No controllers are enabled for delegation in the unified hierarchy
+lxc-attach default 20210405154533.532 TRACE    cgfsng - cgroups/cgfsng.c:cg_hybrid_init:2459 - Writable cgroup hierarchies:
+lxc-attach default 20210405154533.534 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1012 -   Hierarchies:
+lxc-attach default 20210405154533.537 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   0: base_cgroup: /
+lxc-attach default 20210405154533.539 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/unified
+lxc-attach default 20210405154533.541 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.542 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   1: base_cgroup: /
+lxc-attach default 20210405154533.545 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/systemd
+lxc-attach default 20210405154533.547 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.548 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: name=systemd
+lxc-attach default 20210405154533.550 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   2: base_cgroup: /
+lxc-attach default 20210405154533.553 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpu,cpuacct
+lxc-attach default 20210405154533.554 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.556 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpu
+lxc-attach default 20210405154533.557 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: cpuacct
+lxc-attach default 20210405154533.560 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   3: base_cgroup: /
+lxc-attach default 20210405154533.561 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/net_cls,net_prio
+lxc-attach default 20210405154533.563 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.565 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: net_cls
+lxc-attach default 20210405154533.567 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       1: net_prio
+lxc-attach default 20210405154533.568 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   4: base_cgroup: /
+lxc-attach default 20210405154533.570 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/cpuset
+lxc-attach default 20210405154533.572 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.574 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: cpuset
+lxc-attach default 20210405154533.575 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   5: base_cgroup: /
+lxc-attach default 20210405154533.577 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/blkio
+lxc-attach default 20210405154533.580 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.581 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: blkio
+lxc-attach default 20210405154533.582 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   6: base_cgroup: /
+lxc-attach default 20210405154533.996 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/freezer
+lxc-attach default 20210405154533.999 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: freezer
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   7: base_cgroup: /
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/memory
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: memory
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   8: base_cgroup: /
+lxc-attach default 20210405154533.100 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/pids
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: pids
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   9: base_cgroup: /
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/hugetlb
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.101 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: hugetlb
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   10: base_cgroup: /
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/devices
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: devices
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   11: base_cgroup: /
+lxc-attach default 20210405154533.102 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/rdma
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: rdma
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1017 -   12: base_cgroup: /
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1018 -       mountpoint:  /sys/fs/cgroup/perf_event
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1019 -       controllers:
+lxc-attach default 20210405154533.103 TRACE    cgfsng - cgroups/cgfsng.c:lxc_cgfsng_print_hierarchies:1021 -       0: perf_event
+lxc-attach default 20210405154533.103 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:56 - Initialized cgroup driver cgfsng
+lxc-attach default 20210405154533.104 TRACE    cgroup - cgroups/cgroup.c:cgroup_init:61 - Running with hybrid cgroup layout
+lxc-attach default 20210405154533.104 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.105 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.106 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.107 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.108 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.419 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.421 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.423 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.424 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.426 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.427 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.428 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.429 TRACE    commands - commands.c:lxc_cmd_rsp_recv:139 - Command "get_cgroup" received response
+lxc-attach default 20210405154533.430 TRACE    attach - attach.c:lxc_attach:1294 - Moved intermediate process 3540 into container's cgroups
+lxc-attach default 20210405154533.431 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nproc" limit
+lxc-attach default 20210405154533.431 TRACE    conf - conf.c:setup_resource_limits:2601 - Setup "nofile" limit
+lxc-attach default 20210405154533.431 TRACE    attach - attach.c:lxc_attach:1325 - Told intermediate process to start initializing
+lxc-attach default 20210405154533.431 TRACE    attach - attach.c:lxc_attach:1442 - Intermediate process starting to initialize
+lxc-attach default 20210405154533.432 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to user namespace of 1693
+lxc-attach default 20210405154533.433 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to mnt namespace of 1693
+lxc-attach default 20210405154533.433 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to pid namespace of 1693
+lxc-attach default 20210405154533.433 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to uts namespace of 1693
+lxc-attach default 20210405154533.433 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to ipc namespace of 1693
+lxc-attach default 20210405154533.434 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to net namespace of 1693
+lxc-attach default 20210405154533.434 DEBUG    attach - attach.c:lxc_attach_to_ns:240 - Attached to cgroup namespace of 1693
+lxc-attach default 20210405154533.436 TRACE    attach - attach.c:lxc_attach:1332 - Received pid 3541 of attached process in parent pid namespace
+lxc-attach default 20210405154533.436 TRACE    attach - attach.c:lxc_attach:1520 - Sending pid 3541 of attached process
+lxc-attach default 20210405154533.437 TRACE    attach - attach.c:attach_child_main:792 - Set new personality
+lxc-attach default 20210405154533.439 TRACE    attach - attach.c:lxc_attach_drop_privs:310 - Dropped capability 22
+lxc-attach default 20210405154533.439 TRACE    attach - attach.c:lxc_attach:1345 - Intermediate process 3540 exited
+lxc-attach default 20210405154533.440 TRACE    attach - attach.c:attach_child_main:801 - Dropped capabilities
+lxc-attach default 20210405154533.440 TRACE    attach - attach.c:lxc_attach:1363 - Opened LSM label file descriptor 3
+lxc-attach default 20210405154533.441 TRACE    attach - attach.c:attach_child_main:814 - Set up environment
+lxc-attach default 20210405154533.441 TRACE    attach - attach.c:lxc_attach:1376 - Sent LSM label file descriptor 3 to child
+lxc-attach default 20210405154533.443 TRACE    attach - attach.c:attach_child_main:836 - Received LSM label file descriptor 3 from parent
+lxc-attach default 20210405154533.444 NOTICE   utils - utils.c:lxc_switch_uid_gid:1378 - Switched to gid 0
+lxc-attach default 20210405154533.445 NOTICE   utils - utils.c:lxc_switch_uid_gid:1387 - Switched to uid 0
+lxc-attach default 20210405154533.445 NOTICE   utils - utils.c:lxc_setgroups:1400 - Dropped additional groups
+lxc-attach default 20210405154533.447 INFO     lsm - lsm/lsm.c:lsm_process_label_set_at:178 - Set AppArmor label to "anbox_container"
+lxc-attach default 20210405154533.447 TRACE    attach - attach.c:attach_child_main:901 - Set AppArmor LSM label to "anbox_container"

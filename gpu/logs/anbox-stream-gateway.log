@@ -1,0 +1,573 @@
+2021-03-17T02:08:01Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-17T02:08:01Z anbox-stream-gateway.daemon[41186]: I0317 02:08:01.449666   41186 service.go:768] Service: Using TLS to encrypt connections
+2021-03-17T02:08:01Z anbox-stream-gateway.daemon[41186]: I0317 02:08:01.450169   41186 service.go:791] Service: Location is https://10.175.222.201:4000, websocket url is wss://10.175.222.201:4000
+2021-03-17T02:08:01Z anbox-stream-gateway.daemon[41186]: I0317 02:08:01.450282   41186 service.go:544] Service: Creating store with driver dqlite...
+2021-03-17T02:08:02Z anbox-stream-gateway.daemon[41186]: I0317 02:08:02.157077   41186 service.go:461] Service: Using 1 NATs endpoints
+2021-03-17T02:08:02Z anbox-stream-gateway.daemon[41186]: I0317 02:08:02.168703   41186 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-17T02:08:02Z anbox-stream-gateway.daemon[41186]: I0317 02:08:02.168775   41186 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-17T02:08:02Z anbox-stream-gateway.daemon[41186]: I0317 02:08:02.169266   41186 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-17T02:08:02Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-17T02:08:32Z anbox-stream-gateway.daemon[41186]: I0317 02:08:32.951885   41186 daemon.go:108] Service: Received terminated signal
+2021-03-17T02:08:32Z anbox-stream-gateway.daemon[41186]: I0317 02:08:32.952027   41186 service.go:701] Service: Terminating ...
+2021-03-17T02:08:32Z anbox-stream-gateway.daemon[41186]: I0317 02:08:32.952047   41186 service.go:679] Service: Shutting down public HTTP server
+2021-03-17T02:08:32Z anbox-stream-gateway.daemon[41186]: I0317 02:08:32.952104   41186 service.go:679] Service: Shutting down internal HTTP server
+2021-03-17T02:08:32Z systemd[1]: Stopping Service for snap application anbox-stream-gateway.daemon...
+2021-03-17T02:08:32Z anbox-stream-gateway.daemon[41186]: I0317 02:08:32.952417   41186 service.go:481] Service: Connection to NATs got closed
+2021-03-17T02:08:33Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Succeeded.
+2021-03-17T02:08:33Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-03-17T02:08:33Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.289717   42590 service.go:768] Service: Using TLS to encrypt connections
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.290137   42590 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.290801   42590 service.go:544] Service: Creating store with driver dqlite...
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.855270   42590 service.go:461] Service: Using 1 NATs endpoints
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.864888   42590 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.864965   42590 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-17T02:08:33Z anbox-stream-gateway.daemon[42590]: I0317 02:08:33.865355   42590 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-17T02:08:33Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-17T02:22:53Z anbox-stream-gateway.daemon[42590]: E0317 02:22:53.572452   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T02:37:43Z anbox-stream-gateway.daemon[42590]: E0317 02:37:43.716811   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T02:39:12Z anbox-stream-gateway.daemon[42590]: E0317 02:39:12.570548   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:00:05Z anbox-stream-gateway.daemon[42590]: E0317 03:00:05.974158   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:00:35Z anbox-stream-gateway.daemon[42590]: E0317 03:00:35.157708   42590 session.go:335] SignalerSession: Failed to publish message for session c18mogadeakacnmmkr6g: nats: timeout
+2021-03-17T03:00:36Z anbox-stream-gateway.daemon[42590]: E0317 03:00:36.129637   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:42:22Z anbox-stream-gateway.daemon[42590]: E0317 03:42:22.874993   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:42:52Z anbox-stream-gateway.daemon[42590]: E0317 03:42:52.543716   42590 session.go:335] SignalerSession: Failed to publish message for session c18nij2deakacnmmkrig: nats: timeout
+2021-03-17T03:42:53Z anbox-stream-gateway.daemon[42590]: E0317 03:42:53.519329   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:48:15Z anbox-stream-gateway.daemon[42590]: E0317 03:48:15.938207   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:48:20Z anbox-stream-gateway.daemon[42590]: E0317 03:48:20.000999   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:48:33Z anbox-stream-gateway.daemon[42590]: E0317 03:48:33.225530   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:48:45Z anbox-stream-gateway.daemon[42590]: E0317 03:48:45.880624   42590 session.go:335] SignalerSession: Failed to publish message for session c18n1hadeakacnmmkrcg: nats: timeout
+2021-03-17T03:48:46Z anbox-stream-gateway.daemon[42590]: E0317 03:48:46.854471   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:48:49Z anbox-stream-gateway.daemon[42590]: E0317 03:48:49.647529   42590 session.go:335] SignalerSession: Failed to publish message for session c18nibideakacnmmkrhg: nats: timeout
+2021-03-17T03:48:50Z anbox-stream-gateway.daemon[42590]: E0317 03:48:50.621215   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T03:49:02Z anbox-stream-gateway.daemon[42590]: E0317 03:49:02.453229   42590 session.go:335] SignalerSession: Failed to publish message for session c18nlnideakacnmmkro0: nats: timeout
+2021-03-17T03:49:03Z anbox-stream-gateway.daemon[42590]: E0317 03:49:03.429444   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T04:40:00Z anbox-stream-gateway.daemon[42590]: E0317 04:40:00.155376   42590 session.go:357] SignalerSession: Failed to send keep alive ping: tls: use of closed connection
+2021-03-17T04:40:35Z anbox-stream-gateway.daemon[42590]: E0317 04:40:35.724778   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T04:51:13Z anbox-stream-gateway.daemon[42590]: E0317 04:51:13.439057   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:51:19Z anbox-stream-gateway.daemon[42590]: E0317 04:51:19.486140   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:51:28Z anbox-stream-gateway.daemon[42590]: E0317 04:51:28.026952   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:51:31Z anbox-stream-gateway.daemon[42590]: E0317 04:51:31.113687   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:51:44Z anbox-stream-gateway.daemon[42590]: E0317 04:51:44.786068   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:52:30Z anbox-stream-gateway.daemon[42590]: E0317 04:52:30.132888   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T04:52:36Z anbox-stream-gateway.daemon[42590]: E0317 04:52:36.402335   42590 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-17T05:29:22Z anbox-stream-gateway.daemon[42590]: E0317 05:29:22.571043   42590 session.go:357] SignalerSession: Failed to send keep alive ping: tls: use of closed connection
+2021-03-17T05:32:04Z anbox-stream-gateway.daemon[42590]: E0317 05:32:04.930199   42590 session.go:357] SignalerSession: Failed to send keep alive ping: tls: use of closed connection
+2021-03-17T17:15:49Z anbox-stream-gateway.daemon[42590]: E0317 17:15:49.842051   42590 session.go:357] SignalerSession: Failed to send keep alive ping: tls: use of closed connection
+2021-03-17T17:30:30Z anbox-stream-gateway.daemon[42590]: E0317 17:30:30.897635   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T17:31:00Z anbox-stream-gateway.daemon[42590]: E0317 17:31:00.634967   42590 session.go:335] SignalerSession: Failed to publish message for session c18p6tqdeakacnmmkti0: nats: timeout
+2021-03-17T17:31:17Z anbox-stream-gateway.daemon[42590]: E0317 17:31:17.960990   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:31:23Z anbox-stream-gateway.daemon[42590]: E0317 17:31:23.351208   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:31:30Z anbox-stream-gateway.daemon[42590]: E0317 17:31:30.635125   42590 session.go:335] SignalerSession: Failed to publish message for session c18p6tqdeakacnmmkti0: nats: timeout
+2021-03-17T17:31:31Z anbox-stream-gateway.daemon[42590]: E0317 17:31:31.611008   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T17:42:36Z anbox-stream-gateway.daemon[42590]: E0317 17:42:36.485307   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T17:42:49Z anbox-stream-gateway.daemon[42590]: E0317 17:42:49.066955   42590 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:49758: write: broken pipe
+2021-03-17T17:42:54Z anbox-stream-gateway.daemon[42590]: E0317 17:42:54.317543   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:00Z anbox-stream-gateway.daemon[42590]: E0317 17:43:00.478922   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:03Z anbox-stream-gateway.daemon[42590]: E0317 17:43:03.773695   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:06Z anbox-stream-gateway.daemon[42590]: E0317 17:43:06.092041   42590 session.go:335] SignalerSession: Failed to publish message for session c18p6tqdeakacnmmkti0: nats: timeout
+2021-03-17T17:43:06Z anbox-stream-gateway.daemon[42590]: E0317 17:43:06.092555   42590 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:49758: write: broken pipe
+2021-03-17T17:43:24Z anbox-stream-gateway.daemon[42590]: E0317 17:43:24.220513   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-17T17:43:26Z anbox-stream-gateway.daemon[42590]: E0317 17:43:26.134751   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:28Z anbox-stream-gateway.daemon[42590]: E0317 17:43:28.654411   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:30Z anbox-stream-gateway.daemon[42590]: E0317 17:43:30.959061   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:33Z anbox-stream-gateway.daemon[42590]: E0317 17:43:33.218601   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:35Z anbox-stream-gateway.daemon[42590]: E0317 17:43:35.402752   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:49Z anbox-stream-gateway.daemon[42590]: E0317 17:43:49.219433   42590 http_api.go:809] Service: Failed to add connection to session: maximum number of clients reached
+2021-03-17T17:43:53Z anbox-stream-gateway.daemon[42590]: E0317 17:43:53.377345   42590 session.go:335] SignalerSession: Failed to publish message for session c18p6tqdeakacnmmkti0: nats: timeout
+2021-03-17T17:43:54Z anbox-stream-gateway.daemon[42590]: E0317 17:43:54.345325   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-19T01:39:54Z anbox-stream-gateway.daemon[42590]: E0319 01:39:54.318406   42590 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-19T04:10:14Z anbox-stream-gateway.daemon[42590]: E0319 04:10:14.655876   42590 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-19T04:13:09Z systemd[1]: Stopping Service for snap application anbox-stream-gateway.daemon...
+2021-03-19T04:13:09Z anbox-stream-gateway.daemon[42590]: I0319 04:13:09.488901   42590 daemon.go:108] Service: Received terminated signal
+2021-03-19T04:13:09Z anbox-stream-gateway.daemon[42590]: I0319 04:13:09.515072   42590 service.go:477] Service: Got disconnected from NATs server: EOF
+2021-03-19T04:13:09Z anbox-stream-gateway.daemon[42590]: I0319 04:13:09.519294   42590 service.go:701] Service: Terminating ...
+2021-03-19T04:13:09Z anbox-stream-gateway.daemon[42590]: E0319 04:13:09.539045   42590 service.go:707] Service: Failed to drain NATS connection: nats: connection reconnecting
+2021-03-19T04:13:09Z anbox-stream-gateway.daemon[42590]: I0319 04:13:09.554412   42590 service.go:481] Service: Connection to NATs got closed
+2021-03-19T04:13:10Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Succeeded.
+2021-03-19T04:13:10Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-03-19T04:35:28Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-19T04:35:31Z anbox-stream-gateway.daemon[308]: I0319 04:35:31.098815     308 service.go:768] Service: Using TLS to encrypt connections
+2021-03-19T04:35:31Z anbox-stream-gateway.daemon[308]: I0319 04:35:31.100291     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-19T04:35:31Z anbox-stream-gateway.daemon[308]: I0319 04:35:31.100341     308 service.go:544] Service: Creating store with driver dqlite...
+2021-03-19T04:35:32Z anbox-stream-gateway.daemon[308]: I0319 04:35:32.574177     308 service.go:461] Service: Using 1 NATs endpoints
+2021-03-19T04:35:32Z anbox-stream-gateway.daemon[308]: I0319 04:35:32.583827     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-19T04:35:32Z anbox-stream-gateway.daemon[308]: I0319 04:35:32.583902     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-19T04:35:32Z anbox-stream-gateway.daemon[308]: I0319 04:35:32.584449     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-19T04:35:32Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-19T04:39:54Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-19T04:39:56Z anbox-stream-gateway.daemon[312]: I0319 04:39:56.559171     312 service.go:768] Service: Using TLS to encrypt connections
+2021-03-19T04:39:56Z anbox-stream-gateway.daemon[312]: I0319 04:39:56.563046     312 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-19T04:39:56Z anbox-stream-gateway.daemon[312]: I0319 04:39:56.563093     312 service.go:544] Service: Creating store with driver dqlite...
+2021-03-19T04:39:58Z anbox-stream-gateway.daemon[312]: I0319 04:39:58.040736     312 service.go:461] Service: Using 1 NATs endpoints
+2021-03-19T04:39:58Z anbox-stream-gateway.daemon[312]: I0319 04:39:58.050601     312 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-19T04:39:58Z anbox-stream-gateway.daemon[312]: I0319 04:39:58.050624     312 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-19T04:39:58Z anbox-stream-gateway.daemon[312]: I0319 04:39:58.051286     312 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-19T04:39:58Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-22T05:29:30Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-22T05:29:32Z anbox-stream-gateway.daemon[308]: I0322 05:29:32.722387     308 service.go:768] Service: Using TLS to encrypt connections
+2021-03-22T05:29:32Z anbox-stream-gateway.daemon[308]: I0322 05:29:32.723855     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-22T05:29:32Z anbox-stream-gateway.daemon[308]: I0322 05:29:32.723969     308 service.go:544] Service: Creating store with driver dqlite...
+2021-03-22T05:29:34Z anbox-stream-gateway.daemon[308]: I0322 05:29:34.231413     308 service.go:461] Service: Using 1 NATs endpoints
+2021-03-22T05:29:34Z anbox-stream-gateway.daemon[308]: I0322 05:29:34.240917     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-22T05:29:34Z anbox-stream-gateway.daemon[308]: I0322 05:29:34.240945     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-22T05:29:34Z anbox-stream-gateway.daemon[308]: I0322 05:29:34.255992     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-22T05:29:34Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-23T20:00:26Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-23T20:00:28Z anbox-stream-gateway.daemon[308]: I0323 20:00:28.869696     308 service.go:768] Service: Using TLS to encrypt connections
+2021-03-23T20:00:28Z anbox-stream-gateway.daemon[308]: I0323 20:00:28.870736     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-23T20:00:28Z anbox-stream-gateway.daemon[308]: I0323 20:00:28.870778     308 service.go:544] Service: Creating store with driver dqlite...
+2021-03-23T20:00:30Z anbox-stream-gateway.daemon[308]: I0323 20:00:30.340876     308 service.go:461] Service: Using 1 NATs endpoints
+2021-03-23T20:00:30Z anbox-stream-gateway.daemon[308]: I0323 20:00:30.362954     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-23T20:00:30Z anbox-stream-gateway.daemon[308]: I0323 20:00:30.362992     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-23T20:00:30Z anbox-stream-gateway.daemon[308]: I0323 20:00:30.363574     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-23T20:00:30Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-24T00:55:19Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-24T00:55:21Z anbox-stream-gateway.daemon[308]: I0324 00:55:21.766808     308 service.go:768] Service: Using TLS to encrypt connections
+2021-03-24T00:55:21Z anbox-stream-gateway.daemon[308]: I0324 00:55:21.767951     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-24T00:55:21Z anbox-stream-gateway.daemon[308]: I0324 00:55:21.768061     308 service.go:544] Service: Creating store with driver dqlite...
+2021-03-24T00:55:23Z anbox-stream-gateway.daemon[308]: I0324 00:55:23.302585     308 service.go:461] Service: Using 1 NATs endpoints
+2021-03-24T00:55:23Z anbox-stream-gateway.daemon[308]: I0324 00:55:23.312286     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-24T00:55:23Z anbox-stream-gateway.daemon[308]: I0324 00:55:23.312328     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-24T00:55:23Z anbox-stream-gateway.daemon[308]: I0324 00:55:23.312970     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-24T00:55:23Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-24T01:58:50Z anbox-stream-gateway.daemon[308]: E0324 01:58:50.212269     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T02:03:53Z anbox-stream-gateway.daemon[308]: E0324 02:03:53.333411     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T02:28:20Z anbox-stream-gateway.daemon[308]: E0324 02:28:20.040517     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:29:21Z anbox-stream-gateway.daemon[308]: E0324 02:29:21.621928     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:29:58Z anbox-stream-gateway.daemon[308]: I0324 02:29:58.391597     308 daemon.go:108] Service: Received terminated signal
+2021-03-24T02:29:58Z anbox-stream-gateway.daemon[308]: I0324 02:29:58.392893     308 service.go:701] Service: Terminating ...
+2021-03-24T02:29:58Z anbox-stream-gateway.daemon[308]: I0324 02:29:58.393096     308 service.go:481] Service: Connection to NATs got closed
+2021-03-24T02:29:58Z systemd[1]: Stopping Service for snap application anbox-stream-gateway.daemon...
+2021-03-24T02:29:58Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Succeeded.
+2021-03-24T02:29:58Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-03-24T02:33:27Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-03-24T02:33:29Z anbox-stream-gateway.daemon[308]: I0324 02:33:29.840733     308 service.go:768] Service: Using TLS to encrypt connections
+2021-03-24T02:33:29Z anbox-stream-gateway.daemon[308]: I0324 02:33:29.842281     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-03-24T02:33:29Z anbox-stream-gateway.daemon[308]: I0324 02:33:29.842357     308 service.go:544] Service: Creating store with driver dqlite...
+2021-03-24T02:33:31Z anbox-stream-gateway.daemon[308]: I0324 02:33:31.293258     308 service.go:461] Service: Using 1 NATs endpoints
+2021-03-24T02:33:31Z anbox-stream-gateway.daemon[308]: I0324 02:33:31.304787     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-03-24T02:33:31Z anbox-stream-gateway.daemon[308]: I0324 02:33:31.305318     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-03-24T02:33:31Z anbox-stream-gateway.daemon[308]: I0324 02:33:31.305834     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-03-24T02:33:31Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-03-24T02:37:47Z anbox-stream-gateway.daemon[308]: E0324 02:37:47.748431     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:48:55Z anbox-stream-gateway.daemon[308]: E0324 02:48:55.493392     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:49:07Z anbox-stream-gateway.daemon[308]: E0324 02:49:07.195055     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:49:15Z anbox-stream-gateway.daemon[308]: E0324 02:49:15.249813     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:49:22Z anbox-stream-gateway.daemon[308]: E0324 02:49:22.068221     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T02:49:37Z anbox-stream-gateway.daemon[308]: E0324 02:49:37.310193     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T03:21:36Z anbox-stream-gateway.daemon[308]: E0324 03:21:36.599795     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T03:21:43Z anbox-stream-gateway.daemon[308]: E0324 03:21:43.005321     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T03:22:02Z anbox-stream-gateway.daemon[308]: E0324 03:22:02.304428     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T03:22:20Z anbox-stream-gateway.daemon[308]: E0324 03:22:20.254573     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:03:55Z anbox-stream-gateway.daemon[308]: E0324 04:03:55.567669     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:06Z anbox-stream-gateway.daemon[308]: E0324 04:04:06.267164     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:21Z anbox-stream-gateway.daemon[308]: E0324 04:04:21.047267     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:23Z anbox-stream-gateway.daemon[308]: E0324 04:04:23.083246     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:27Z anbox-stream-gateway.daemon[308]: E0324 04:04:27.431553     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:31Z anbox-stream-gateway.daemon[308]: E0324 04:04:31.689593     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:37Z anbox-stream-gateway.daemon[308]: E0324 04:04:37.507702     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:42Z anbox-stream-gateway.daemon[308]: E0324 04:04:42.180466     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:46Z anbox-stream-gateway.daemon[308]: E0324 04:04:46.901853     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:49Z anbox-stream-gateway.daemon[308]: E0324 04:04:49.959204     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:52Z anbox-stream-gateway.daemon[308]: E0324 04:04:52.917982     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:55Z anbox-stream-gateway.daemon[308]: E0324 04:04:55.623741     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:04:59Z anbox-stream-gateway.daemon[308]: E0324 04:04:59.104206     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:05:01Z anbox-stream-gateway.daemon[308]: E0324 04:05:01.090434     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:05:03Z anbox-stream-gateway.daemon[308]: E0324 04:05:03.619642     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:10:45Z anbox-stream-gateway.daemon[308]: E0324 04:10:45.718941     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:04Z anbox-stream-gateway.daemon[308]: E0324 04:11:04.927689     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:08Z anbox-stream-gateway.daemon[308]: E0324 04:11:08.284869     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:10Z anbox-stream-gateway.daemon[308]: E0324 04:11:10.610023     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:13Z anbox-stream-gateway.daemon[308]: E0324 04:11:13.172383     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:18Z anbox-stream-gateway.daemon[308]: E0324 04:11:18.566699     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:29Z anbox-stream-gateway.daemon[308]: E0324 04:11:29.260401     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:34Z anbox-stream-gateway.daemon[308]: E0324 04:11:34.175538     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T04:11:37Z anbox-stream-gateway.daemon[308]: E0324 04:11:37.084970     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:40:46Z anbox-stream-gateway.daemon[308]: E0324 05:40:46.404874     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:40:55Z anbox-stream-gateway.daemon[308]: E0324 05:40:55.701496     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:40:57Z anbox-stream-gateway.daemon[308]: E0324 05:40:57.864922     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:04Z anbox-stream-gateway.daemon[308]: E0324 05:41:04.820582     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:07Z anbox-stream-gateway.daemon[308]: E0324 05:41:07.812745     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:10Z anbox-stream-gateway.daemon[308]: E0324 05:41:10.795121     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:15Z anbox-stream-gateway.daemon[308]: E0324 05:41:15.625615     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:21Z anbox-stream-gateway.daemon[308]: E0324 05:41:21.248848     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:24Z anbox-stream-gateway.daemon[308]: E0324 05:41:24.184928     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T05:41:27Z anbox-stream-gateway.daemon[308]: E0324 05:41:27.840367     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T07:59:35Z anbox-stream-gateway.daemon[308]: E0324 07:59:35.048223     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T08:00:31Z anbox-stream-gateway.daemon[308]: E0324 08:00:31.972159     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T08:01:34Z anbox-stream-gateway.daemon[308]: E0324 08:01:34.940318     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T08:08:25Z anbox-stream-gateway.daemon[308]: E0324 08:08:25.388806     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:28Z anbox-stream-gateway.daemon[308]: E0324 08:08:28.594267     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:35Z anbox-stream-gateway.daemon[308]: E0324 08:08:35.050895     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:37Z anbox-stream-gateway.daemon[308]: E0324 08:08:37.922283     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:45Z anbox-stream-gateway.daemon[308]: E0324 08:08:45.087836     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:51Z anbox-stream-gateway.daemon[308]: E0324 08:08:51.579431     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:54Z anbox-stream-gateway.daemon[308]: E0324 08:08:54.797972     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:08:58Z anbox-stream-gateway.daemon[308]: E0324 08:08:58.346096     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:01Z anbox-stream-gateway.daemon[308]: E0324 08:09:01.986444     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:05Z anbox-stream-gateway.daemon[308]: E0324 08:09:05.468750     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:09Z anbox-stream-gateway.daemon[308]: E0324 08:09:09.365491     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:19Z anbox-stream-gateway.daemon[308]: E0324 08:09:19.099483     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:23Z anbox-stream-gateway.daemon[308]: E0324 08:09:23.349364     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:24Z anbox-stream-gateway.daemon[308]: E0324 08:09:24.271394     308 agent.go:399] Service: Failed to send container termination request to connected agent: context deadline exceeded
+2021-03-24T08:09:24Z anbox-stream-gateway.daemon[308]: E0324 08:09:24.271420     308 session.go:107] Service: Failed to delete session c1deu1adeak02d3idj80: terminate request timed out
+2021-03-24T08:09:24Z anbox-stream-gateway.daemon[308]: E0324 08:09:24.275432     308 http_api.go:543] Service: Failed to delete session: terminate request timed out
+2021-03-24T08:09:24Z anbox-stream-gateway.daemon[308]: E0324 08:09:24.275451     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-24T08:09:26Z anbox-stream-gateway.daemon[308]: E0324 08:09:26.441395     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:29Z anbox-stream-gateway.daemon[308]: E0324 08:09:29.546793     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:32Z anbox-stream-gateway.daemon[308]: E0324 08:09:32.176407     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:36Z anbox-stream-gateway.daemon[308]: E0324 08:09:36.139723     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:47Z anbox-stream-gateway.daemon[308]: E0324 08:09:47.303511     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:09:57Z anbox-stream-gateway.daemon[308]: E0324 08:09:57.262767     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T08:14:09Z anbox-stream-gateway.daemon[308]: E0324 08:14:09.364209     308 agent.go:399] Service: Failed to send container termination request to connected agent: context deadline exceeded
+2021-03-24T08:14:09Z anbox-stream-gateway.daemon[308]: E0324 08:14:09.364235     308 session.go:107] Service: Failed to delete session c1deppadeak02d3idj30: terminate request timed out
+2021-03-24T08:14:09Z anbox-stream-gateway.daemon[308]: E0324 08:14:09.365176     308 http_api.go:543] Service: Failed to delete session: terminate request timed out
+2021-03-24T08:14:09Z anbox-stream-gateway.daemon[308]: E0324 08:14:09.365215     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-24T08:16:09Z anbox-stream-gateway.daemon[308]: E0324 08:16:09.277168     308 agent.go:399] Service: Failed to send container termination request to connected agent: context deadline exceeded
+2021-03-24T08:16:09Z anbox-stream-gateway.daemon[308]: E0324 08:16:09.277209     308 session.go:107] Service: Failed to delete session c1deppadeak02d3idj30: terminate request timed out
+2021-03-24T08:16:09Z anbox-stream-gateway.daemon[308]: E0324 08:16:09.277421     308 http_api.go:543] Service: Failed to delete session: terminate request timed out
+2021-03-24T08:16:09Z anbox-stream-gateway.daemon[308]: E0324 08:16:09.277440     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-24T08:17:26Z anbox-stream-gateway.daemon[308]: E0324 08:17:26.392750     308 agent.go:399] Service: Failed to send container termination request to connected agent: context deadline exceeded
+2021-03-24T08:17:26Z anbox-stream-gateway.daemon[308]: E0324 08:17:26.392783     308 session.go:107] Service: Failed to delete session c1deppadeak02d3idj30: terminate request timed out
+2021-03-24T08:17:26Z anbox-stream-gateway.daemon[308]: E0324 08:17:26.393015     308 http_api.go:543] Service: Failed to delete session: terminate request timed out
+2021-03-24T08:17:26Z anbox-stream-gateway.daemon[308]: E0324 08:17:26.393034     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-24T08:17:53Z anbox-stream-gateway.daemon[308]: E0324 08:17:53.761512     308 agent.go:399] Service: Failed to send container termination request to connected agent: context deadline exceeded
+2021-03-24T08:17:53Z anbox-stream-gateway.daemon[308]: E0324 08:17:53.761547     308 session.go:107] Service: Failed to delete session c1deppadeak02d3idj30: terminate request timed out
+2021-03-24T08:17:53Z anbox-stream-gateway.daemon[308]: E0324 08:17:53.761805     308 http_api.go:543] Service: Failed to delete session: terminate request timed out
+2021-03-24T08:17:53Z anbox-stream-gateway.daemon[308]: E0324 08:17:53.761826     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-03-24T08:24:55Z anbox-stream-gateway.daemon[308]: E0324 08:24:55.749896     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-03-24T18:13:38Z anbox-stream-gateway.daemon[308]: E0324 18:13:38.006545     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:13:46Z anbox-stream-gateway.daemon[308]: E0324 18:13:46.397681     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:13:57Z anbox-stream-gateway.daemon[308]: E0324 18:13:57.862437     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:14:03Z anbox-stream-gateway.daemon[308]: E0324 18:14:03.285635     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:14:14Z anbox-stream-gateway.daemon[308]: E0324 18:14:14.788858     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:14:18Z anbox-stream-gateway.daemon[308]: E0324 18:14:18.444966     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:14:21Z anbox-stream-gateway.daemon[308]: E0324 18:14:21.781094     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-24T18:14:23Z anbox-stream-gateway.daemon[308]: E0324 18:14:23.501012     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-29T16:24:29Z anbox-stream-gateway.daemon[308]: E0329 16:24:29.492151     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-29T20:39:45Z anbox-stream-gateway.daemon[308]: E0329 20:39:45.239957     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-03-29T20:39:46Z anbox-stream-gateway.daemon[308]: E0329 20:39:46.305624     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-03-29T20:39:46Z anbox-stream-gateway.daemon[308]: E0329 20:39:46.305649     308 session.go:107] Service: Failed to delete session c1h3m3adeak02d3idlag: context canceled
+2021-03-29T20:39:46Z anbox-stream-gateway.daemon[308]: E0329 20:39:46.306169     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-03-29T20:39:46Z anbox-stream-gateway.daemon[308]: E0329 20:39:46.306199     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-01T16:11:08Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T16:11:11Z anbox-stream-gateway.daemon[308]: I0401 16:11:10.999604     308 service.go:768] Service: Using TLS to encrypt connections
+2021-04-01T16:11:11Z anbox-stream-gateway.daemon[308]: I0401 16:11:11.001502     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-01T16:11:11Z anbox-stream-gateway.daemon[308]: I0401 16:11:11.004180     308 service.go:544] Service: Creating store with driver dqlite...
+2021-04-01T16:11:12Z anbox-stream-gateway.daemon[308]: I0401 16:11:12.551273     308 service.go:461] Service: Using 1 NATs endpoints
+2021-04-01T16:11:12Z anbox-stream-gateway.daemon[308]: I0401 16:11:12.569952     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-01T16:11:12Z anbox-stream-gateway.daemon[308]: I0401 16:11:12.569988     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-01T16:11:12Z anbox-stream-gateway.daemon[308]: I0401 16:11:12.570580     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-01T16:11:12Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T16:29:59Z anbox-stream-gateway.daemon[308]: I0401 16:29:58.995361     308 daemon.go:108] Service: Received terminated signal
+2021-04-01T16:29:59Z anbox-stream-gateway.daemon[308]: I0401 16:29:58.996168     308 service.go:701] Service: Terminating ...
+2021-04-01T16:29:59Z anbox-stream-gateway.daemon[308]: I0401 16:29:58.996381     308 service.go:481] Service: Connection to NATs got closed
+2021-04-01T16:29:59Z systemd[1]: Stopping Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T16:29:59Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Succeeded.
+2021-04-01T16:29:59Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T16:33:11Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T16:33:14Z anbox-stream-gateway.daemon[308]: I0401 16:33:14.049997     308 service.go:768] Service: Using TLS to encrypt connections
+2021-04-01T16:33:14Z anbox-stream-gateway.daemon[308]: I0401 16:33:14.051664     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-01T16:33:14Z anbox-stream-gateway.daemon[308]: I0401 16:33:14.051802     308 service.go:544] Service: Creating store with driver dqlite...
+2021-04-01T16:33:15Z anbox-stream-gateway.daemon[308]: I0401 16:33:15.711330     308 service.go:461] Service: Using 1 NATs endpoints
+2021-04-01T16:33:15Z anbox-stream-gateway.daemon[308]: I0401 16:33:15.733249     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-01T16:33:15Z anbox-stream-gateway.daemon[308]: I0401 16:33:15.733351     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-01T16:33:15Z anbox-stream-gateway.daemon[308]: I0401 16:33:15.734034     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-01T16:33:15Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T17:22:25Z anbox-stream-gateway.daemon[308]: E0401 17:22:25.226163     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-01T17:22:40Z anbox-stream-gateway.daemon[308]: E0401 17:22:40.095397     308 session.go:107] Service: Failed to delete session c1j021ideak02d2qrib0: operation failed
+2021-04-01T17:22:40Z anbox-stream-gateway.daemon[308]: E0401 17:22:40.095956     308 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-01T17:44:53Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T17:44:56Z anbox-stream-gateway.daemon[308]: I0401 17:44:56.228210     308 service.go:768] Service: Using TLS to encrypt connections
+2021-04-01T17:44:56Z anbox-stream-gateway.daemon[308]: I0401 17:44:56.229971     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-01T17:44:56Z anbox-stream-gateway.daemon[308]: I0401 17:44:56.230010     308 service.go:544] Service: Creating store with driver dqlite...
+2021-04-01T17:44:57Z anbox-stream-gateway.daemon[308]: I0401 17:44:57.765866     308 service.go:461] Service: Using 1 NATs endpoints
+2021-04-01T17:44:57Z anbox-stream-gateway.daemon[308]: I0401 17:44:57.784494     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-01T17:44:57Z anbox-stream-gateway.daemon[308]: I0401 17:44:57.784570     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-01T17:44:57Z anbox-stream-gateway.daemon[308]: I0401 17:44:57.785138     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-01T17:44:57Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T17:50:34Z anbox-stream-gateway.daemon[308]: I0401 17:50:34.168417     308 daemon.go:108] Service: Received terminated signal
+2021-04-01T17:50:34Z anbox-stream-gateway.daemon[308]: I0401 17:50:34.170027     308 service.go:701] Service: Terminating ...
+2021-04-01T17:50:34Z anbox-stream-gateway.daemon[308]: I0401 17:50:34.170400     308 service.go:481] Service: Connection to NATs got closed
+2021-04-01T17:50:34Z systemd[1]: Stopping Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T17:50:34Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Succeeded.
+2021-04-01T17:50:34Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T17:54:05Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-01T17:54:07Z anbox-stream-gateway.daemon[308]: I0401 17:54:07.526395     308 service.go:768] Service: Using TLS to encrypt connections
+2021-04-01T17:54:07Z anbox-stream-gateway.daemon[308]: I0401 17:54:07.528274     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-01T17:54:07Z anbox-stream-gateway.daemon[308]: I0401 17:54:07.528320     308 service.go:544] Service: Creating store with driver dqlite...
+2021-04-01T17:54:09Z anbox-stream-gateway.daemon[308]: I0401 17:54:09.048612     308 service.go:461] Service: Using 1 NATs endpoints
+2021-04-01T17:54:09Z anbox-stream-gateway.daemon[308]: I0401 17:54:09.071204     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-01T17:54:09Z anbox-stream-gateway.daemon[308]: I0401 17:54:09.071247     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-01T17:54:09Z anbox-stream-gateway.daemon[308]: I0401 17:54:09.071884     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-01T17:54:09Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-01T17:56:53Z anbox-stream-gateway.daemon[308]: E0401 17:56:53.472094     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-01T17:56:56Z anbox-stream-gateway.daemon[308]: E0401 17:56:56.217273     308 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-01T18:30:50Z anbox-stream-gateway.daemon[308]: E0401 18:30:50.083609     308 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:55856: write: broken pipe
+2021-04-01T18:30:51Z anbox-stream-gateway.daemon[308]: E0401 18:30:51.085963     308 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:55856: write: broken pipe
+2021-04-04T22:41:37Z anbox-stream-gateway.daemon[308]: E0404 22:41:37.590511     308 session.go:82] Service: Failed to queue launch job: unexpected number of GPUs assigned to container
+2021-04-04T22:41:52Z anbox-stream-gateway.daemon[308]: E0404 22:41:52.455051     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-05T19:32:32Z anbox-stream-gateway.daemon[308]: E0405 19:32:32.447613     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T19:32:32Z anbox-stream-gateway.daemon[308]: E0405 19:32:32.540742     308 session.go:82] Service: Failed to queue launch job: unexpected number of GPUs assigned to container
+2021-04-05T19:39:57Z anbox-stream-gateway.daemon[308]: E0405 19:39:57.746206     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T19:39:57Z anbox-stream-gateway.daemon[308]: E0405 19:39:57.757342     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T19:53:11Z anbox-stream-gateway.daemon[308]: E0405 19:53:11.291148     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T19:53:11Z anbox-stream-gateway.daemon[308]: E0405 19:53:11.295063     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:06:09Z anbox-stream-gateway.daemon[308]: E0405 20:06:09.382377     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:06:10Z anbox-stream-gateway.daemon[308]: E0405 20:06:10.394085     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:18:13Z anbox-stream-gateway.daemon[308]: E0405 20:18:13.406709     308 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:38232: write: broken pipe
+2021-04-05T20:18:26Z anbox-stream-gateway.daemon[308]: E0405 20:18:26.410138     308 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:38232: write: broken pipe
+2021-04-05T20:27:17Z anbox-stream-gateway.daemon[308]: E0405 20:27:17.206753     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:27:18Z anbox-stream-gateway.daemon[308]: E0405 20:27:18.223827     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:27:43Z anbox-stream-gateway.daemon[308]: E0405 20:27:43.100338     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:27:44Z anbox-stream-gateway.daemon[308]: E0405 20:27:44.132373     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.495933     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.495963     308 session.go:107] Service: Failed to delete session c1ln58ideak02d38hau0: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502511     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502727     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502783     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502830     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502729     308 session.go:107] Service: Failed to delete session c1ln58adeak02d38has0: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.502860     308 session.go:107] Service: Failed to delete session c1ln592deak02d38hb10: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.503173     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.503203     308 session.go:107] Service: Failed to delete session c1ln58qdeak02d38hb00: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.503768     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.503800     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.504225     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.504247     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.504642     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:22Z anbox-stream-gateway.daemon[308]: E0405 20:28:22.504667     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.935255     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.935293     308 session.go:107] Service: Failed to delete session c1ln57ideak02d38hap0: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.935432     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.935463     308 session.go:107] Service: Failed to delete session c1ln582deak02d38har0: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.936046     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.936079     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.936546     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.936568     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.947285     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.947300     308 session.go:107] Service: Failed to delete session c1ln57qdeak02d38haq0: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.947795     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:28:57Z anbox-stream-gateway.daemon[308]: E0405 20:28:57.947810     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:38:54Z anbox-stream-gateway.daemon[308]: E0405 20:38:54.489216     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T20:38:54Z anbox-stream-gateway.daemon[308]: E0405 20:38:54.489293     308 session.go:107] Service: Failed to delete session c1ln7sideak02d38hbl0: context canceled
+2021-04-05T20:38:54Z anbox-stream-gateway.daemon[308]: E0405 20:38:54.490172     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T20:38:54Z anbox-stream-gateway.daemon[308]: E0405 20:38:54.490211     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T20:48:55Z anbox-stream-gateway.daemon[308]: E0405 20:48:54.999798     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:48:56Z anbox-stream-gateway.daemon[308]: E0405 20:48:56.019809     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:48:56Z anbox-stream-gateway.daemon[308]: E0405 20:48:56.993785     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:48:58Z anbox-stream-gateway.daemon[308]: E0405 20:48:57.989777     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:48:59Z anbox-stream-gateway.daemon[308]: E0405 20:48:58.994562     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T20:49:00Z anbox-stream-gateway.daemon[308]: E0405 20:49:00.003755     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:23:52Z anbox-stream-gateway.daemon[308]: E0405 21:23:52.128680     308 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:56850: write: broken pipe
+2021-04-05T21:24:19Z anbox-stream-gateway.daemon[308]: E0405 21:24:19.134938     308 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:56850: write: broken pipe
+2021-04-05T21:37:40Z anbox-stream-gateway.daemon[308]: E0405 21:37:40.182317     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:40Z anbox-stream-gateway.daemon[308]: E0405 21:37:40.402335     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:41Z anbox-stream-gateway.daemon[308]: E0405 21:37:41.169194     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:41Z anbox-stream-gateway.daemon[308]: E0405 21:37:41.408854     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:42Z anbox-stream-gateway.daemon[308]: E0405 21:37:42.190040     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:42Z anbox-stream-gateway.daemon[308]: E0405 21:37:42.424393     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:43Z anbox-stream-gateway.daemon[308]: E0405 21:37:43.185834     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:43Z anbox-stream-gateway.daemon[308]: E0405 21:37:43.417923     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:44Z anbox-stream-gateway.daemon[308]: E0405 21:37:44.226889     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:44Z anbox-stream-gateway.daemon[308]: E0405 21:37:44.412388     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:45Z anbox-stream-gateway.daemon[308]: E0405 21:37:45.223209     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:45Z anbox-stream-gateway.daemon[308]: E0405 21:37:45.424802     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:46Z anbox-stream-gateway.daemon[308]: E0405 21:37:46.194649     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:47Z anbox-stream-gateway.daemon[308]: E0405 21:37:47.208532     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:37:48Z anbox-stream-gateway.daemon[308]: E0405 21:37:48.209025     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:46:30Z anbox-stream-gateway.daemon[308]: E0405 21:46:30.223364     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-05T21:48:48Z anbox-stream-gateway.daemon[308]: E0405 21:48:48.172120     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T21:48:48Z anbox-stream-gateway.daemon[308]: E0405 21:48:48.172156     308 session.go:107] Service: Failed to delete session c1loaaqdeak02d38hgi0: context canceled
+2021-04-05T21:48:48Z anbox-stream-gateway.daemon[308]: E0405 21:48:48.172798     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T21:48:48Z anbox-stream-gateway.daemon[308]: E0405 21:48:48.172827     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T21:59:05Z anbox-stream-gateway.daemon[308]: E0405 21:59:05.774945     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-05T22:03:33Z anbox-stream-gateway.daemon[308]: E0405 22:03:33.205741     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T22:03:33Z anbox-stream-gateway.daemon[308]: E0405 22:03:33.205787     308 session.go:107] Service: Failed to delete session c1logaqdeak02d38hhj0: context canceled
+2021-04-05T22:03:33Z anbox-stream-gateway.daemon[308]: E0405 22:03:33.206670     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T22:03:33Z anbox-stream-gateway.daemon[308]: E0405 22:03:33.206709     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: panic: concurrent write to websocket connection
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: goroutine 136805 [running]:
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: github.com/gorilla/websocket.(*messageWriter).flushFrame(0x4000840ff0, 0x1, 0x0, 0x0, 0x0, 0x2, 0x2)
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/vendor/github.com/gorilla/websocket/conn.go:591 +0x608
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: github.com/gorilla/websocket.(*messageWriter).Close(0x4000840ff0, 0x1, 0x0)
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/vendor/github.com/gorilla/websocket/conn.go:709 +0x44
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: github.com/gorilla/websocket.(*Conn).prepWrite(0x40001caf20, 0x9, 0x400016af00, 0x4000324f60)
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/vendor/github.com/gorilla/websocket/conn.go:459 +0x268
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: github.com/gorilla/websocket.(*Conn).WriteMessage(0x40001caf20, 0x9, 0xff85f0, 0x0, 0x0, 0x0, 0x0)
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/vendor/github.com/gorilla/websocket/conn.go:745 +0x100
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: launchpad.net/indore/anbox-stream-gateway/internal/signaler.(*session).runKeepAlive(0x40001d4600, 0x4000b1acc0)
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/internal/signaler/session.go:356 +0xf4
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: created by launchpad.net/indore/anbox-stream-gateway/internal/signaler.(*session).startReadPump
+2021-04-05T22:15:04Z anbox-stream-gateway.daemon[308]: 	/build/parts/anbox-stream-gateway/build/internal/signaler/session.go:368 +0x6c
+2021-04-05T22:15:04Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+2021-04-05T22:15:04Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Failed with result 'exit-code'.
+2021-04-05T22:15:05Z systemd[1]: snap.anbox-stream-gateway.daemon.service: Scheduled restart job, restart counter is at 1.
+2021-04-05T22:15:05Z systemd[1]: Stopped Service for snap application anbox-stream-gateway.daemon.
+2021-04-05T22:15:05Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-05T22:15:05Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:05.229834 1857945 service.go:768] Service: Using TLS to encrypt connections
+2021-04-05T22:15:05Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:05.231715 1857945 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-05T22:15:05Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:05.231804 1857945 service.go:544] Service: Creating store with driver dqlite...
+2021-04-05T22:15:06Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:06.722621 1857945 service.go:461] Service: Using 1 NATs endpoints
+2021-04-05T22:15:06Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:06.731551 1857945 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-05T22:15:06Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:06.731638 1857945 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-05T22:15:06Z anbox-stream-gateway.daemon[1857945]: I0405 22:15:06.732215 1857945 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-05T22:15:06Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-05T22:19:39Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:39.192089 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:42Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:42.289987 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:43Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:43.897902 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:45Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:45.309731 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:47Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:47.100185 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:48Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:48.904724 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:53Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:53.510482 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:58Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:58.179942 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:19:59Z anbox-stream-gateway.daemon[1857945]: E0405 22:19:59.827908 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:20:01Z anbox-stream-gateway.daemon[1857945]: E0405 22:20:01.337534 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:20:04Z anbox-stream-gateway.daemon[1857945]: E0405 22:20:04.725996 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:20:06Z anbox-stream-gateway.daemon[1857945]: E0405 22:20:06.375312 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:20:07Z anbox-stream-gateway.daemon[1857945]: E0405 22:20:07.916910 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:20:09Z anbox-stream-gateway.daemon[1857945]: E0405 22:20:09.524153 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:30:05Z anbox-stream-gateway.daemon[1857945]: E0405 22:30:05.340941 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:55156: write: broken pipe
+2021-04-05T22:30:11Z anbox-stream-gateway.daemon[1857945]: E0405 22:30:11.387732 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-05T22:30:24Z anbox-stream-gateway.daemon[1857945]: E0405 22:30:24.346753 1857945 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:55156: write: broken pipe
+2021-04-05T22:31:14Z anbox-stream-gateway.daemon[1857945]: E0405 22:31:14.302170 1857945 session.go:107] Service: Failed to delete session c1louoideak5j6dv45kg: operation failed
+2021-04-05T22:31:14Z anbox-stream-gateway.daemon[1857945]: E0405 22:31:14.303257 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-05T22:38:07Z anbox-stream-gateway.daemon[1857945]: E0405 22:38:07.117285 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-05T22:54:17Z anbox-stream-gateway.daemon[1857945]: E0405 22:54:17.985448 1857945 session.go:107] Service: Failed to delete session c1lp95adeak5j6dv47pg: operation failed
+2021-04-05T22:54:17Z anbox-stream-gateway.daemon[1857945]: E0405 22:54:17.986495 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-05T23:09:10Z anbox-stream-gateway.daemon[1857945]: E0405 23:09:10.150091 1857945 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-05T23:09:10Z anbox-stream-gateway.daemon[1857945]: E0405 23:09:10.150136 1857945 session.go:107] Service: Failed to delete session c1lpf0qdeak5j6dv495g: context canceled
+2021-04-05T23:09:10Z anbox-stream-gateway.daemon[1857945]: E0405 23:09:10.151434 1857945 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-05T23:09:10Z anbox-stream-gateway.daemon[1857945]: E0405 23:09:10.151480 1857945 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-06T04:11:15Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:15.109338 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:16Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:16.096481 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:17Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:17.108546 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:18Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:18.103912 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:19Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:19.122584 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:20Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:20.126032 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:46Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:46.815268 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:47Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:47.820311 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:48Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:48.809628 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:49Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:49.813730 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:50Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:50.814754 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:51Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:51.818847 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:52Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:52.823754 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:53Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:53.844901 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:54Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:54.819357 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:55Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:55.841218 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:56Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:56.827980 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:57Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:57.838032 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:58Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:58.829966 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:11:59Z anbox-stream-gateway.daemon[1857945]: E0406 04:11:59.840142 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:12:00Z anbox-stream-gateway.daemon[1857945]: E0406 04:12:00.834444 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:12:01Z anbox-stream-gateway.daemon[1857945]: E0406 04:12:01.836441 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:15:08Z anbox-stream-gateway.daemon[1857945]: E0406 04:15:08.507100 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-06T04:34:32Z anbox-stream-gateway.daemon[1857945]: E0406 04:34:32.727657 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:39960: write: broken pipe
+2021-04-06T04:34:32Z anbox-stream-gateway.daemon[1857945]: E0406 04:34:32.728882 1857945 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:39960: write: broken pipe
+2021-04-06T04:38:00Z anbox-stream-gateway.daemon[1857945]: E0406 04:38:00.544830 1857945 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-06T04:38:00Z anbox-stream-gateway.daemon[1857945]: E0406 04:38:00.544870 1857945 session.go:107] Service: Failed to delete session c1lu9aideak5j6dv4cng: context canceled
+2021-04-06T04:38:00Z anbox-stream-gateway.daemon[1857945]: E0406 04:38:00.545486 1857945 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-06T04:38:00Z anbox-stream-gateway.daemon[1857945]: E0406 04:38:00.545522 1857945 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-06T04:42:08Z anbox-stream-gateway.daemon[1857945]: E0406 04:42:08.688990 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-06T04:49:59Z anbox-stream-gateway.daemon[1857945]: E0406 04:49:59.045244 1857945 session.go:107] Service: Failed to delete session c1lug72deak5j6dv4drg: operation failed
+2021-04-06T04:49:59Z anbox-stream-gateway.daemon[1857945]: E0406 04:49:59.045923 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-06T04:58:30Z anbox-stream-gateway.daemon[1857945]: E0406 04:58:30.722287 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:58:31Z anbox-stream-gateway.daemon[1857945]: E0406 04:58:31.728077 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:58:32Z anbox-stream-gateway.daemon[1857945]: E0406 04:58:32.726951 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:58:33Z anbox-stream-gateway.daemon[1857945]: E0406 04:58:33.734277 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T04:58:34Z anbox-stream-gateway.daemon[1857945]: E0406 04:58:34.730527 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T17:35:53Z anbox-stream-gateway.daemon[1857945]: E0406 17:35:53.442396 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-06T17:36:26Z anbox-stream-gateway.daemon[1857945]: E0406 17:36:26.897544 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:42458: write: broken pipe
+2021-04-06T17:36:46Z anbox-stream-gateway.daemon[1857945]: E0406 17:36:46.904701 1857945 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:42458: write: broken pipe
+2021-04-06T17:56:46Z anbox-stream-gateway.daemon[1857945]: E0406 17:56:46.181937 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:52174: write: broken pipe
+2021-04-06T17:56:47Z anbox-stream-gateway.daemon[1857945]: E0406 17:56:47.186278 1857945 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:52174: write: broken pipe
+2021-04-06T17:58:16Z anbox-stream-gateway.daemon[1857945]: E0406 17:58:16.488175 1857945 session.go:107] Service: Failed to delete session c1ma1mideak5j6dv4jeg: operation failed
+2021-04-06T17:58:16Z anbox-stream-gateway.daemon[1857945]: E0406 17:58:16.489464 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-06T17:59:26Z anbox-stream-gateway.daemon[1857945]: E0406 17:59:26.206003 1857945 session.go:107] Service: Failed to delete session c1ma20qdeak5j6dv4k0g: operation failed
+2021-04-06T17:59:26Z anbox-stream-gateway.daemon[1857945]: E0406 17:59:26.206623 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-06T18:15:51Z anbox-stream-gateway.daemon[1857945]: E0406 18:15:51.999574 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-06T18:15:51Z anbox-stream-gateway.daemon[1857945]: E0406 18:15:51.999600 1857945 session.go:191] SignalerSession: Failed to close client connection: tls: use of closed connection
+2021-04-06T18:36:44Z anbox-stream-gateway.daemon[1857945]: E0406 18:36:44.548434 1857945 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-06T18:36:44Z anbox-stream-gateway.daemon[1857945]: E0406 18:36:44.548493 1857945 session.go:107] Service: Failed to delete session c1maj12deak5j6dv4kgg: context canceled
+2021-04-06T18:36:44Z anbox-stream-gateway.daemon[1857945]: E0406 18:36:44.549694 1857945 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-06T18:36:44Z anbox-stream-gateway.daemon[1857945]: E0406 18:36:44.549729 1857945 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-06T18:58:21Z anbox-stream-gateway.daemon[1857945]: E0406 18:58:21.413157 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T18:58:22Z anbox-stream-gateway.daemon[1857945]: E0406 18:58:22.423426 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T19:13:58Z anbox-stream-gateway.daemon[1857945]: E0406 19:13:58.608201 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-06T21:48:23Z anbox-stream-gateway.daemon[1857945]: E0406 21:48:23.147140 1857945 session.go:82] Service: Failed to queue launch job: unexpected number of GPUs assigned to container
+2021-04-06T21:54:38Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:38.545941 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:39Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:39.554535 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:40Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:40.566685 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:41Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:41.560469 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:42Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:42.578356 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:43Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:43.582207 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:44Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:44.570709 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:54:45Z anbox-stream-gateway.daemon[1857945]: E0406 21:54:45.563439 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T21:55:46Z anbox-stream-gateway.daemon[1857945]: E0406 21:55:46.557575 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-06T22:00:50Z anbox-stream-gateway.daemon[1857945]: E0406 22:00:50.112693 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-06T22:10:32Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:32.941324 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:33Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:33.937297 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:34Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:34.934388 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:35Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:35.959611 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:36Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:36.959558 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:37Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:37.953014 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:38Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:38.946708 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-06T22:10:39Z anbox-stream-gateway.daemon[1857945]: E0406 22:10:39.976196 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:31Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:31.289287 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:32Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:32.299635 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:33Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:33.287361 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:34Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:34.285118 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:40Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:40.319194 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-07T03:38:46Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:46.860638 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:47Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:47.449773 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:48Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:48.471113 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:49Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:49.483013 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:50Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:50.448772 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:51Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:51.470407 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:52Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:52.449560 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:53Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:53.463711 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:38:54Z anbox-stream-gateway.daemon[1857945]: E0407 03:38:54.470611 1857945 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-07T03:51:37Z anbox-stream-gateway.daemon[1857945]: E0407 03:51:37.551052 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-07T04:01:42Z anbox-stream-gateway.daemon[1857945]: E0407 04:01:42.298312 1857945 session.go:107] Service: Failed to delete session c1misiadeak5j6dv54qg: operation failed
+2021-04-07T04:01:42Z anbox-stream-gateway.daemon[1857945]: E0407 04:01:42.299033 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-07T04:02:47Z anbox-stream-gateway.daemon[1857945]: E0407 04:02:47.631742 1857945 session.go:107] Service: Failed to delete session c1misbqdeak5j6dv54eg: operation failed
+2021-04-07T04:02:47Z anbox-stream-gateway.daemon[1857945]: E0407 04:02:47.632597 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-07T04:15:29Z anbox-stream-gateway.daemon[1857945]: E0407 04:15:29.263171 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-07T04:15:49Z anbox-stream-gateway.daemon[1857945]: E0407 04:15:49.263611 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-07T04:38:41Z anbox-stream-gateway.daemon[1857945]: E0407 04:38:41.358895 1857945 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:58010: write: broken pipe
+2021-04-07T04:39:08Z anbox-stream-gateway.daemon[1857945]: E0407 04:39:08.363384 1857945 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:58010: write: broken pipe
+2021-04-07T04:41:48Z anbox-stream-gateway.daemon[1857945]: E0407 04:41:48.358617 1857945 session.go:107] Service: Failed to delete session c1mjeh2deak5j6dv57eg: operation failed
+2021-04-07T04:41:48Z anbox-stream-gateway.daemon[1857945]: E0407 04:41:48.359710 1857945 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-13T04:55:15Z systemd[1]: Starting Service for snap application anbox-stream-gateway.daemon...
+2021-04-13T04:55:18Z anbox-stream-gateway.daemon[308]: I0413 04:55:18.216728     308 service.go:768] Service: Using TLS to encrypt connections
+2021-04-13T04:55:18Z anbox-stream-gateway.daemon[308]: I0413 04:55:18.217446     308 service.go:791] Service: Location is https://10.76.5.89, websocket url is wss://10.76.5.89
+2021-04-13T04:55:18Z anbox-stream-gateway.daemon[308]: I0413 04:55:18.217543     308 service.go:544] Service: Creating store with driver dqlite...
+2021-04-13T04:55:20Z anbox-stream-gateway.daemon[308]: I0413 04:55:20.032866     308 service.go:461] Service: Using 1 NATs endpoints
+2021-04-13T04:55:20Z anbox-stream-gateway.daemon[308]: I0413 04:55:20.060997     308 service.go:257] Service: public API running at 10.175.222.201:4000
+2021-04-13T04:55:20Z anbox-stream-gateway.daemon[308]: I0413 04:55:20.061084     308 service.go:242] Service: Running TLS secured HTTPS server
+2021-04-13T04:55:20Z anbox-stream-gateway.daemon[308]: I0413 04:55:20.061779     308 service.go:155] Service: internal API running at /var/snap/anbox-stream-gateway/common/service/internal.socket
+2021-04-13T04:55:20Z systemd[1]: Started Service for snap application anbox-stream-gateway.daemon.
+2021-04-13T05:55:16Z anbox-stream-gateway.daemon[308]: E0413 05:55:16.505063     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T05:55:16Z anbox-stream-gateway.daemon[308]: E0413 05:55:16.754618     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T05:55:17Z anbox-stream-gateway.daemon[308]: E0413 05:55:17.766352     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T05:55:18Z anbox-stream-gateway.daemon[308]: E0413 05:55:18.766118     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T05:55:19Z anbox-stream-gateway.daemon[308]: E0413 05:55:19.774534     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T05:55:20Z anbox-stream-gateway.daemon[308]: E0413 05:55:20.783731     308 session.go:82] Service: Failed to queue launch job: No suitable node to satisfy container requirements available
+2021-04-13T06:08:23Z anbox-stream-gateway.daemon[308]: E0413 06:08:23.939686     308 session.go:357] SignalerSession: Failed to send keep alive ping: websocket: close sent
+2021-04-13T06:10:02Z anbox-stream-gateway.daemon[308]: E0413 06:10:02.492858     308 session.go:107] Service: Failed to delete session c1qjakqdeak02d0dtjlg: operation failed
+2021-04-13T06:10:02Z anbox-stream-gateway.daemon[308]: E0413 06:10:02.493701     308 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-13T06:10:34Z anbox-stream-gateway.daemon[308]: E0413 06:10:34.294678     308 session.go:357] SignalerSession: Failed to send keep alive ping: write tcp 10.175.222.201:4000->10.175.222.1:60960: write: broken pipe
+2021-04-13T06:10:38Z anbox-stream-gateway.daemon[308]: E0413 06:10:38.297449     308 session.go:191] SignalerSession: Failed to close client connection: write tcp 10.175.222.201:4000->10.175.222.1:60960: write: broken pipe
+2021-04-13T06:17:43Z anbox-stream-gateway.daemon[308]: E0413 06:17:43.813507     308 agent.go:399] Service: Failed to send container termination request to connected agent: context canceled
+2021-04-13T06:17:43Z anbox-stream-gateway.daemon[308]: E0413 06:17:43.813552     308 session.go:107] Service: Failed to delete session c1qjb8ideak02d0dtk7g: context canceled
+2021-04-13T06:17:43Z anbox-stream-gateway.daemon[308]: E0413 06:17:43.817767     308 http_api.go:543] Service: Failed to delete session: context canceled
+2021-04-13T06:17:43Z anbox-stream-gateway.daemon[308]: E0413 06:17:43.817811     308 utils.go:40] Service: Error forming the HTTP response: http: Handler timeout
+2021-04-13T06:33:20Z anbox-stream-gateway.daemon[308]: E0413 06:33:20.093027     308 session.go:107] Service: Failed to delete session c1qjluadeak02d0dtnrg: operation failed
+2021-04-13T06:33:20Z anbox-stream-gateway.daemon[308]: E0413 06:33:20.094097     308 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-13T06:41:16Z anbox-stream-gateway.daemon[308]: E0413 06:41:16.039247     308 session.go:107] Service: Failed to delete session c1qjkjadeak02d0dtm9g: operation failed
+2021-04-13T06:41:16Z anbox-stream-gateway.daemon[308]: E0413 06:41:16.039899     308 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-13T06:43:06Z anbox-stream-gateway.daemon[308]: E0413 06:43:06.476112     308 session.go:107] Service: Failed to delete session c1qjk5qdeak02d0dtltg: operation failed
+2021-04-13T06:43:06Z anbox-stream-gateway.daemon[308]: E0413 06:43:06.477622     308 http_api.go:543] Service: Failed to delete session: operation failed
+2021-04-13T06:43:18Z anbox-stream-gateway.daemon[308]: E0413 06:43:18.622486     308 session.go:107] Service: Failed to delete session c1qjk72deak02d0dtm2g: operation failed
+2021-04-13T06:43:18Z anbox-stream-gateway.daemon[308]: E0413 06:43:18.623214     308 http_api.go:543] Service: Failed to delete session: operation failed

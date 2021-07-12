@@ -1,0 +1,74 @@
+#################################################
+# $1: resolution
+# $2: fps
+# $3: containers
+# $4: gpu slot
+#
+# $ ./gpuResourceGeneration.sh 720 30 10 0
+# $ ./gpuResourceCalculation.sh
+
+
+# or: ./anboxPerformanceData.sh 720 30 10 0
+#################################################
+
+Note: nvidia-smi --format=csv --query-gpu=power.draw,utilization.gpu,fan.speed,temperature.gpu
+      nvidia-smi --help-query-gpu
+
+
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.supported
+clocks_throttle_reasons.supported
+0x00000000000001FF
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.supported
+clocks_throttle_reasons.supported
+0x00000000000001FF
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.active
+clocks_throttle_reasons.active
+0x0000000000000000
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.gpu_idle
+clocks_throttle_reasons.gpu_idle
+Not Active
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.hw_slowdown
+clocks_throttle_reasons.hw_slowdown
+Not Active
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks_throttle_reasons.hw_thermal_slowdown
+clocks_throttle_reasons.hw_thermal_slowdown
+Not Active
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.current.graphics
+clocks.current.graphics [MHz]
+585 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.current.sm
+clocks.current.sm [MHz]
+585 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.current.memory
+clocks.current.memory [MHz]
+5000 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.current.video
+clocks.current.video [MHz]
+795 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.applications.graphics
+clocks.applications.graphics [MHz]
+585 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.applications.memory
+clocks.applications.memory [MHz]
+5001 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.default_applications.graphics
+clocks.default_applications.graphics [MHz]
+585 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.default_applications.memory
+clocks.default_applications.memory [MHz]
+5001 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.max.graphics
+clocks.max.graphics [MHz]
+1590 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.max.sm
+clocks.max.sm [MHz]
+1590 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=clocks.max.memory
+clocks.max.memory [MHz]
+5001 MHz
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=mig.mode.current
+mig.mode.current
+[N/A]
+ubuntu@anbox:~/scripts/gpu$ nvidia-smi --format=csv --query-gpu=mig.mode.pending
+mig.mode.pending
+[N/A]

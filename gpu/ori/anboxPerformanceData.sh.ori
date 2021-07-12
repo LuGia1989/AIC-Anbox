@@ -1,0 +1,6 @@
+#sleeptime = 130
+#sleeptime = 320
+
+./gpuResourceGeneration.sh $1 $2 $3 $4
+#sleep 130
+./gpuResourceCalculation.sh

@@ -1,0 +1,156 @@
+-- Logs begin at Tue 2021-04-13 06:31:34 UTC, end at Tue 2021-04-13 06:31:39 UTC. --
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd-journald[67]: Journal started
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd-journald[67]: Runtime journal (/run/log/journal/16d976d9acf84825ac9ca501c6bda9d3) is 8.0M, max 4.0G, 3.9G free.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-network-setup[71]: + [ ! -f /var/lib/anbox/network.yaml ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-network-setup[71]: + exec ans apply -c /var/lib/anbox/network.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target System Initialization.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: acpid.path: Refusing to start, unit to trigger not loaded.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Failed to start ACPI Events Check.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Paths.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Starting Anbox Container Manager.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Message of the Day.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: dbus.socket: Socket service dbus.service not loaded, refusing.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Failed to listen on D-Bus System Message Bus Socket.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Daily Cleanup of Temporary Directories.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Timers.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Listening on Anbox Container Manager.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Sockets.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Basic System.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Starting Anbox Network Bridge...
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Anbox Network Setup.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Network.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Reached target Network is Online.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Starting Message of the Day...
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Starting Anbox...
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export LIBC_FATAL_STDERR_=1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + id -u anbox
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export XDG_RUNTIME_DIR=/run/user/1000
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + read_log_level
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep log-level /var/lib/anbox/session.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + cut -d: -f 2
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + tr -d [:space:]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local log_level=info
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -z info ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + echo info
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export ANBOX_LOG_LEVEL=info
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + read_interface_address eth0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + ifconfig eth0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep -Eo inet (addr:)?([0-9]*\.){3}[0-9]*
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep -Eo ([0-9]*\.){3}[0-9]*
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + eth0_address=192.168.100.39
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export ARG_REMOTE_ADDR=192.168.100.39
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + enable_services
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local network_config_path=/var/lib/anbox/network.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ ! -e /var/lib/anbox/network.yaml ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + /usr/bin/ans has-service -c /var/lib/anbox/network.yaml adb
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: Error: not found
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + /usr/bin/ans has-service -c /var/lib/anbox/network.yaml ssh
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Anbox Network Bridge.
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: Error: not found
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + enable_aarch32_if_possible
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + create_extra_properties_file
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local runtime_dir=/run/user/1000/anbox
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ ! -e /run/user/1000/anbox ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + mkdir -p /run/user/1000/anbox
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local extra_prop=/run/user/1000/anbox/extra.prop
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + rm -f /run/user/1000/anbox/extra.prop
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + touch /run/user/1000/anbox/extra.prop
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + uname -m
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ aarch64 = aarch64 ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + /usr/bin/aarch32-test
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + echo System supports AArch32 and AArch64
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: System supports AArch32 and AArch64
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + /usr/bin/acc execute-hook restore
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: 2021/04/13 06:31:34 Executing hook restore for addon webrtc
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: Anbox Version: 1.9.1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: WebRTC Platform Version: 1.9.2-alpha.0+git5ba823250
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: Mesa Version: 20.0.8-0ubuntu1~18.04.1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + chown -R anbox:anbox /run/user/1000
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + parse_session_value use-gpu-encoder
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local name=use-gpu-encoder
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep use-gpu-encoder /var/lib/anbox/session.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local line=use-gpu-encoder: true
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + echo  true
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + xargs
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + use_gpu_encoder=true
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -z true ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export ANBOX_USE_GPU_ENCODER=true
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + parse_session_value primary-gpu
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local name=primary-gpu
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep primary-gpu /var/lib/anbox/session.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local line=primary-gpu: 000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + echo  000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + xargs
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + primary_gpu=000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -n 000d:01:00.0 ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export ANBOX_PRIMARY_GPU=000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + which nvidia-smi
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: /usr/bin/nvidia-smi
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + + nvidia-smi --query-gpu=index,gpu_bus_id --format=csv
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: tr [:upper:] [:lower:]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + + cut -d, -f1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: grep 000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + gpu_id=1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + export CUDA_VISIBLE_DEVICES=1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + parse_session_args
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + acg -config /var/lib/anbox/session.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local extra_args=--platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -e /var/lib/anbox/network.yaml ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + cat /var/lib/anbox/network.yaml
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + grep ipv4.gateway
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + cut -d: -f 2
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + tr -d [:space:]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + local gateway=192.168.100.1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -n 192.168.100.1 ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + extra_args=--platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -e /var/lib/anbox/android.json ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + extra_args=--platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1 --android-config=/var/lib/anbox/android.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + echo --platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1 --android-config=/var/lib/anbox/android.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + EXTRA_ARGS=--platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1 --android-config=/var/lib/anbox/android.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + [ -e /var/lib/anbox/.env_overrides ]
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS,NOTIFY_SOCKET,WATCHDOG,WATCHDOG_USEC
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS,NOTIFY_SOCKET,WATCHDOG,WATCHDOG_USEC,ANBOX_DISPLAY_DENSITY,LD_LIBRARY_PATH
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS,NOTIFY_SOCKET,WATCHDOG,WATCHDOG_USEC,ANBOX_DISPLAY_DENSITY,LD_LIBRARY_PATH,ANBOX_USE_GPU_ENCODER,ANBOX_PRIMARY_GPU
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + PRESERVE_LIST=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS,NOTIFY_SOCKET,WATCHDOG,WATCHDOG_USEC,ANBOX_DISPLAY_DENSITY,LD_LIBRARY_PATH,ANBOX_USE_GPU_ENCODER,ANBOX_PRIMARY_GPU,CUDA_VISIBLE_DEVICES
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: + exec sudo -u anbox -g anbox --preserve-env=LIBC_FATAL_STDERR,XDG_RUNTIME_DIR,ANBOX_LOG_LEVEL,ARG_REMOTE_ADDR,ANBOX_ADB_LISTEN_ADDRESS,NOTIFY_SOCKET,WATCHDOG,WATCHDOG_USEC,ANBOX_DISPLAY_DENSITY,LD_LIBRARY_PATH,ANBOX_USE_GPU_ENCODER,ANBOX_PRIMARY_GPU,CUDA_VISIBLE_DEVICES /usr/bin/anbox session --platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1 --android-config=/var/lib/anbox/android.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag sudo[116]:     root : unable to resolve host ams-c1qjlbadeak02ccd8mag
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag sudo[116]:     root : problem with defaults entries ; TTY=unknown ; PWD=/ ; USER=anbox ; GROUP=anbox ;
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: sudo: unable to resolve host ams-c1qjlbadeak02ccd8mag: Resource temporarily unavailable
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag sudo[116]:     root : TTY=unknown ; PWD=/ ; USER=anbox ; GROUP=anbox ; ENV=XDG_RUNTIME_DIR=/run/user/1000 ANBOX_LOG_LEVEL=info ARG_REMOTE_ADDR=192.168.100.39 NOTIFY_SOCKET=/run/systemd/notify WATCHDOG_USEC=20000000 ANBOX_USE_GPU_ENCODER=true ANBOX_PRIMARY_GPU=000d:01:00.0 CUDA_VISIBLE_DEVICES=1 ; COMMAND=/usr/bin/anbox session --platform=webrtc --boot-package=net.froemling.bombsquad.demo --metrics-server=influxdb:192.168.100.1:8095,raw --log-level=info --enable-watchdog --instance-type=g4.3 --extra-properties=/run/user/1000/anbox/extra.prop --network-dns=192.168.100.1 --android-config=/var/lib/anbox/android.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag sudo[116]: pam_env(sudo:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag sudo[116]: pam_unix(sudo:session): session opened for user anbox by (uid=0)
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: [811.680] perfetto.cc:36165       Producer 1 connected
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: [811.680] perfetto.cc:29802       Producer connected
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: [811.680] perfetto.cc:37833       Producer 1 registered data source "track_event"
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox[215]: Version
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag systemd[1]: Starting Anbox Container Manager...
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-container-manager[223]: INFO: Loading Anbox container AppArmor profile from cache ...
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.758435   215 platform.cpp:89] Loading platform configuration from /var/lib/anbox/platform.json
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: W0413 06:31:34.758544   215 platform.cpp:91] No platform configuration available, using default settings
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.758550   215 platform.cpp:96] Loading user configuration from /var/lib/anbox/userdata
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.758965   215 platform.cpp:351] Configured WebRTC with log level warning
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.758996   215 platform.cpp:130] Using display configuration: 1280x720@30
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.759217   215 drm_manager.cpp:107] Found nvidia DRM device at /dev/dri/renderD129 (bus id 0000:01:00.0)
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.759368   215 drm_manager.cpp:107] Found nvidia DRM device at /dev/dri/renderD128 (bus id 000d:01:00.0)
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.759388   215 platform.cpp:242] Found primary GPU with bus id 000d:01:00.0
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.759393   215 platform.cpp:276] Using nvidia GPU with id 1
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.759407   215 platform.cpp:298] Loading GPU implementation from /usr/lib/aarch64-linux-gnu/anbox/platforms/webrtc/webrtc_nvidia.so
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.762250   215 gl_api.cpp:183] Loading EGL API from /usr/lib/aarch64-linux-gnu/anbox/platforms/webrtc/angle/libEGL.so
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.762773   215 gl_api.cpp:188] Loading GLESv2 API from /usr/lib/aarch64-linux-gnu/anbox/platforms/webrtc/angle/libGLESv2.so
+Apr 13 06:31:34 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:34.815168   215 nvidia_implementation.cpp:90] Found CUDA device at PCI address 000d:01:00.0
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Anbox Container Manager.
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag 50-motd-news[115]:  * Introducing self-healing high availability clusters in MicroK8s.
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag 50-motd-news[115]:    Simple, hardened, Kubernetes for production, from RaspberryPi to DC.
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag 50-motd-news[115]:      https://microk8s.io/high-availability
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag systemd[1]: Started Message of the Day.
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:35.669726   215 vk_context.cpp:187] Found Vulkan physical device with address 000d:01:00.0
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: I0413 06:31:35.669759   215 vk_context.cpp:343] Using Vulkan device: Tesla T4 (driver 460.128.192 api 1.2.155)
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: E0413 06:31:35.878671   215 vk_context.cpp:410] Failed to create Vulkan device: VK_ERROR_INITIALIZATION_FAILED
+Apr 13 06:31:35 ams-c1qjlbadeak02ccd8mag anbox-starter[116]: E0413 06:31:35.977138   215 nvidia_implementation.cpp:116] Failed to create Vulkan context
+Apr 13 06:31:39 ams-c1qjlbadeak02ccd8mag anbox[215]: PluginException: Failed to load platform from /usr/lib/aarch64-linux-gnu/anbox/platforms/webrtc/platform_webrtc.so
+Apr 13 06:31:39 ams-c1qjlbadeak02ccd8mag sudo[116]: pam_unix(sudo:session): session closed for user anbox
+Apr 13 06:31:39 ams-c1qjlbadeak02ccd8mag systemd[1]: anbox.service: Main process exited, code=exited, status=1/FAILURE
+Apr 13 06:31:39 ams-c1qjlbadeak02ccd8mag amsctl[258]: 2021/04/13 06:31:39 Dumping android.log ...
+Apr 13 06:31:39 ams-c1qjlbadeak02ccd8mag amsctl[258]: 2021/04/13 06:31:39 Dumping system.log ...

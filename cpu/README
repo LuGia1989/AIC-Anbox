@@ -1,0 +1,9 @@
+top.sh:
+# ./top.sh ./logs/filename
+top -n 120 -d 1 -b > $1.log
+top.py:
+python3 top.py ./logs/filename.log
+
+COMBINE:
+./anboxCPUPerformanceData.sh <filename without extension log>
+
