@@ -9,14 +9,16 @@ def encUtil(f):
         min_encUtil = df_encUtil['util_in_%'].min()
         max_encUtil = df_encUtil['util_in_%'].max()
         ave_encUtil = int(df_encUtil['util_in_%'].mean())
+        std_encUtil = float(df_encUtil['util_in_%'].std())
         #print(df_encUtil['util_in_%'])
-    return min_encUtil, max_encUtil, ave_encUtil
+    return min_encUtil, max_encUtil, ave_encUtil, std_encUtil
 
 def main():
-    min_encUtil, max_encUtil, ave_encUtil = encUtil(f)
+    min_encUtil, max_encUtil, ave_encUtil, std_encUtil = encUtil(f)
     print('Min. Encoder Utilization in % = ', min_encUtil)
     print('Ave. Encoder Utilization in % = ', ave_encUtil)
     print('Max. Encoder Utilization in % = ', max_encUtil)
+    print('Std. Encoder Utilization in % = ', '{0:.2f}'.format(std_encUtil))
 
 if __name__ == '__main__':
     main()
